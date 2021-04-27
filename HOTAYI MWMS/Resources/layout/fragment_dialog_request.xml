@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5px">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        android:layout_margin="5px"
+        android:id="@+id/inputLay_req1"
+        app:errorEnabled="true"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="@color/OrangeWeb">
+    
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/partN2"
+            android:inputType="text"
+            android:id="@+id/input_req_part"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputLay_req2"
+        android:layout_below="@id/inputLay_req1"
+        app:endIconMode="clear_text"
+        android:layout_margin="5px"
+        app:errorEnabled="true"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="@color/OrangeWeb">
+    
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/qty"
+            android:inputType="number"
+            android:id="@+id/input_req_qty"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:layout_below="@id/inputLay_req2"
+        android:text="@string/enter"
+        android:id="@+id/btn_etr2"/>
+
+</RelativeLayout>

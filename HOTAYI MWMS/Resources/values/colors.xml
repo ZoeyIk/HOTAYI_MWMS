@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c3e50</color>
+    <color name="colorPrimaryDark">#1B3147</color>
+    <color name="colorAccent">#3498db</color>
+  <color name="midYellow">#FFEA00</color>
+  <color name="MikadoYellow">#FFC300</color>
+  <color name="OrangeWeb">#FFA200</color>
+  <color name="HeatWave">#FF7B00</color>
+  <color name="PapayaWhip">#FAEDCB</color>
+  <color name="SizzlingSunrise">#FFDD00</color>
+  <color name="Cultured">#EDEDED</color>
+  <color name="WhiteOrange">#ffffe6</color>
+  <color name="white">#fff</color>
+  <color name="black">#000</color>
+</resources>

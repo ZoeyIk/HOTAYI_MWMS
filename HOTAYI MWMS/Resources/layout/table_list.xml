@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="25px">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5px"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardBackgroundColor="@color/PapayaWhip">
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10px">
+        
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/partN"
+                android:id="@+id/title_partNum"
+                android:textSize="@dimen/abc_text_size_large_material"/>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="4"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10px">
+
+                <TextView
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/serialNum"
+                    android:layout_margin="3px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/serialNum"
+                    android:layout_margin="3px"
+                    android:id="@+id/query_serialN"/>
+
+                <TextView
+                    android:layout_width="120px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rack_line"
+                    android:layout_margin="3px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rackID"
+                    android:layout_margin="3px"
+                    android:id="@+id/query_rack"/>
+                <TextView
+                    android:layout_width="120px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty"
+                    android:layout_margin="3px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty"
+                    android:layout_margin="3px"
+                    android:id="@+id/query_qty"/>
+                <TextView
+                    android:layout_width="120px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loc"
+                    android:layout_margin="3px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loc"
+                    android:layout_margin="3px"
+                    android:id="@+id/query_loc"/>
+            </GridLayout>
+
+        </LinearLayout>
+    
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">HOTAYI_MWMS</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+  <string name="title_receive">Receive</string>
+  <string name="title_store">Store</string>
+  <string name="title_issue">Issue</string>
+  <string name="partN">Part Number: </string>
+  <string name="partN2">Part Number</string>
+  <string name="qty">Quantity: </string>
+  <string name="qty2">Quantity</string>
+  <string name="serialNum">Serial Number: </string>
+  <string name="serialNum2">Serial Number</string>
+  <string name="lineNum">Production Line</string>
+  <string name="rack_line">Rack/Line: </string>
+  <string name="rackID">Rack ID</string>
+  <string name="loc">Location: </string>
+  <string name="HOTAYI">HOTAYI</string>
+  <string name="enter">Enter</string>
+  <string name="scan">Scan</string>
+  <string name="report">Report</string>
+  <string name="map">Map</string>
+  <string name="logout">Logout</string>
+  <string name="search">Search</string>
+  <string name="name">Employee Name</string>
+  <string name="loginID">Login ID</string>
+  <string name="password">Password</string>
+  <string name="login">Login</string>
+  <string name="request">Make Request</string>
+  <string name="rackSize">Rack Size: </string>
+  <string name="status_title">Status: </string>
+  <string name="navigate">Navigate</string>
+</resources>

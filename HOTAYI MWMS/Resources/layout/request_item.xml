@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5px"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/PapayaWhip">
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="10px"
+        android:orientation="horizontal">
+    
+        <TextView
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:layout_margin="3px"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:text="@string/partN"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3px"
+            android:text="@string/partN"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:id="@+id/request_partN"/>
+        <TextView
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:layout_margin="3px"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:text="@string/qty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3px"
+            android:text="@string/qty"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:id="@+id/request_qty"/>
+    
+    </GridLayout>
+    
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15px">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapItem_rack"
+        android:padding="5px"
+        android:textColor="@color/OrangeWeb"
+        android:text="@string/rackID"
+        android:textSize="@dimen/abc_text_size_large_material"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapItem_rack"
+        android:id="@+id/gv_rackInfo"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_margin="15px">
+    
+        <TextView
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:layout_margin="3px"
+            android:text="@string/rackSize"
+            android:textSize="@dimen/abc_text_size_medium_material"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3px"
+            android:text="@string/rackSize"
+            android:id="@+id/tv_mapSize"
+            android:textSize="@dimen/abc_text_size_medium_material"/>
+    
+    </GridLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gv_rackInfo"
+        android:id="@+id/btn_nav"
+        android:text="@string/navigate"/>
+
+</RelativeLayout>
