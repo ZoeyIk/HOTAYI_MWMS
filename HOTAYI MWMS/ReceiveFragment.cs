@@ -14,6 +14,8 @@ using AndroidX.Fragment;
 using AndroidX.Fragment.App;
 using Fragment = AndroidX.Fragment.App.Fragment;
 using Google.Android.Material.TextField;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace HOTAYI_MWMS
 {
@@ -24,7 +26,7 @@ namespace HOTAYI_MWMS
         private TextInputEditText input1, input2;
         private Button btn_enter;
         private int c = 0;
-        private int counter;
+        private List<EmpInfo> emp;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -38,6 +40,10 @@ namespace HOTAYI_MWMS
             // Use this to return your custom view for this Fragment
             View view = inflater.Inflate(Resource.Layout.fragment_scanitem, container, false);
 
+            //get employee info
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfo", FileCreationMode.Private);
+            emp = JsonConvert.DeserializeObject<List<EmpInfo>>(pref.GetString("EmpInfo", String.Empty));
+
             inputLayout1 = view.FindViewById<TextInputLayout>(Resource.Id.tl_input1);
             inputLayout2 = view.FindViewById<TextInputLayout>(Resource.Id.tl_input2);
 
@@ -47,16 +53,23 @@ namespace HOTAYI_MWMS
             inputLayout1.ExpandedHintEnabled = true;
             inputLayout1.Hint = GetString(Resource.String.partN2);
 
-            inputLayout1.HintEnabled = true;
-            inputLayout1.HintAnimationEnabled = true;
-            inputLayout1.ExpandedHintEnabled = true;
+            inputLayout2.HintEnabled = true;
+            inputLayout2.HintAnimationEnabled = true;
+            inputLayout2.ExpandedHintEnabled = true;
             inputLayout2.Hint = GetString(Resource.String.qty2);
 
             input1 = view.FindViewById<TextInputEditText>(Resource.Id.input1);
-            input2 = view.FindViewById<TextInputEditText>(Resource.Id.input2);       
+            input2 = view.FindViewById<TextInputEditText>(Resource.Id.input2);
 
-            counter = 0;
-            
+            input1.Click += delegate
+            {
+                c = 0;
+            };
+            input2.Click += delegate
+            {
+                c = 1;
+            };
+
             btn_enter = view.FindViewById<Button>(Resource.Id.btn_etr);
             btn_enter.Click += delegate
             {
@@ -85,12 +98,8 @@ namespace HOTAYI_MWMS
 
                 if (valid)
                 {
-                    var serialNum = partNum + "_" + qty + "_" + counter;
-                    Toast.MakeText(Application.Context, "Part Num: " + partNum + "\nQuantity: " + qty + "\nSerial Num: " + serialNum, ToastLength.Short).Show();
-                    saveData(partNum, inp_qty, serialNum);
-                    clearInput();
+                    saveData(partNum, inp_qty);
                     c = 0;
-                    counter++;
                 }
             };
 
@@ -118,23 +127,21 @@ namespace HOTAYI_MWMS
             inputLayout2.Error = null;
         }
 
-        public void saveData(string partN, int qty, string serialN)
+        public async void saveData(string partN, int qty)
         {
-            //get shared preferences
-            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfo", FileCreationMode.Private);
-            var json = pref.GetString("Reels", String.Empty);
-            List<ReelInfo> reels = JsonConvert.DeserializeObject<List<ReelInfo>>(json);
-            //create new object and add into existing list
-            ReelInfo reel = new ReelInfo();
-            reel.partNum = partN;
-            reel.qty = qty;
-            reel.serialNum = serialN;
-            reels.Add(reel);
-            //put the new list into shared preferences
-            json = JsonConvert.SerializeObject(reels, Formatting.Indented);
-            ISharedPreferencesEditor editor = pref.Edit();
-            editor.PutString("Reels", json);
-            editor.Apply();
+            HttpClient client = new HttpClient();
+            string url = $"https://hotayi-backend.azurewebsites.net/api/Reel/RecvItems?partN=" + partN + $"&qty=" + qty + $"&empID=" + emp[0].empID;
+            var uri = new Uri(url);
+            HttpResponseMessage responseMessage = await client.GetAsync(uri);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                string content = await responseMessage.Content.ReadAsStringAsync();
+                if (content == "PASS")
+                {
+                    clearInput();
+                }
+                Toast.MakeText(Application.Context, content, ToastLength.Short).Show();
+            }
         }
     }
 }

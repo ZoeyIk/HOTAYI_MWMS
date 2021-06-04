@@ -5,21 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500px"
         android:isScrollContainer="true"
-        android:scrollbars="horizontal">
+        android:scrollbars="horizontal|vertical"
+        android:scrollbarStyle="outsideInset"
+        android:fillViewport="true"
+        android:background="@drawable/rectangle">
     
-        <TableLayout
-            android:layout_width="wrap_content"
+        <HorizontalScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tableLayout1"
-            android:layout_margin="5px"
-            android:background="@drawable/rectangle"/>
-
-    </HorizontalScrollView>
+            android:scrollbars="horizontal|vertical">
     
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridLayout1"
+                android:layout_margin="10px"
+                android:paddingTop="10px"/>
+
+        </HorizontalScrollView>
+    
+    </ScrollView>
+
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -10,6 +10,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Xamarin.Essentials;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
 
 namespace HOTAYI_MWMS
 {
@@ -19,7 +22,8 @@ namespace HOTAYI_MWMS
         private EditText input_ID, input_password;
         private TextInputLayout inputLayout1, inputLayout2;
         private Button btn_login;
-        private string empName;
+        long lastPress;
+        private List<EmpInfo> emp;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -32,15 +36,12 @@ namespace HOTAYI_MWMS
 
             //check if already login
             ISharedPreferences sharedPreferences = Application.Context.GetSharedPreferences("UserInfo", FileCreationMode.Private);
-            var userID = sharedPreferences.GetString("EmpID", String.Empty);
-            var userPassword = sharedPreferences.GetString("EmpPassword", String.Empty);
-            if(userID != String.Empty && userPassword != String.Empty)
+            var empI = sharedPreferences.GetString("EmpInfo", String.Empty);
+            //var userID = sharedPreferences.GetString("EmpID", String.Empty);
+            //var userPassword = sharedPreferences.GetString("EmpPassword", String.Empty);
+            if(empI != "" || empI != String.Empty)
             {
-                var valid = authenticateLogin(userID, userPassword);
-                if (valid)
-                {
-                    this.StartActivity(intent);
-                }
+                this.StartActivity(intent);
             }
 
             input_ID = FindViewById<EditText>(Resource.Id.input_loginID);
@@ -49,18 +50,28 @@ namespace HOTAYI_MWMS
             inputLayout2 = FindViewById<TextInputLayout>(Resource.Id.textInputLayout2);
 
             btn_login = FindViewById<Button>(Resource.Id.btn_login);
-            btn_login.Click += delegate
+            btn_login.Click += async delegate
             {
-                var valid = authenticateLogin(input_ID.Text, input_password.Text);
-                if (valid)
+                var empId = input_ID.Text;
+                var empPassword = input_password.Text;
+
+                HttpClient client = new HttpClient();
+                string url = $"https://hotayi-backend.azurewebsites.net/api/Reel/GetEmpName?empID=" + empId + $"&passW=" + empPassword;
+                var uri = new Uri(url);
+                HttpResponseMessage responseMessage = await client.GetAsync(uri);
+                if (responseMessage.IsSuccessStatusCode)
                 {
+                    string content = await responseMessage.Content.ReadAsStringAsync();
+                    emp = JsonConvert.DeserializeObject<List<EmpInfo>>(content);
+                }
+
+                if (emp[0].empName != "FAIL")
+                {
+                    var user = JsonConvert.SerializeObject(emp, Formatting.Indented);
                     ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfo", FileCreationMode.Private);
                     ISharedPreferencesEditor editor = pref.Edit();
-                    editor.PutString("EmpName", empName);
-                    editor.PutString("EmpID", input_ID.Text);
-                    editor.PutString("EmpPassword", input_password.Text);
+                    editor.PutString("EmpInfo", user);
                     editor.Apply();
-                    
                     this.StartActivity(intent);
                 }
                 else
@@ -73,24 +84,27 @@ namespace HOTAYI_MWMS
             };
         }
 
-        public bool authenticateLogin(string userID, string userPassword)
-        {
-            // if connected to database, here write the authentication 
-            if(userID == "10001" && userPassword == "admin")
-            {
-                empName = "IK ZHU YI";
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
         public void clearInput()
         {
             input_ID.Text = "";
             input_password.Text = "";
+        }
+
+        public override void OnBackPressed()
+        {
+            // source https://stackoverflow.com/a/27124904/3814729
+            long currentTime = DateTime.UtcNow.Ticks / TimeSpan.TicksPerMillisecond;
+
+            // source https://stackoverflow.com/a/14006485/3814729
+            if (currentTime - lastPress > 5000)
+            {
+                Toast.MakeText(this, "Press back again to exit", ToastLength.Long).Show();
+                lastPress = currentTime;
+            }
+            else
+            {
+                this.FinishAffinity();
+            }
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

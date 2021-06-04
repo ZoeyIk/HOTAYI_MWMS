@@ -38,7 +38,7 @@ namespace HOTAYI_MWMS
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            
+
             SetContentView(Resource.Layout.activity_main);
 
             //textMessage = FindViewById<TextView>(Resource.Id.message);
@@ -50,6 +50,8 @@ namespace HOTAYI_MWMS
             iss_frag = new IssueFragment();
 
             // Let the receive item interface appears first
+            SupportActionBar.Title = "Receive Item";
+            
             SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frg_container, recv_frag, "RecvFrag").Commit();
             statusView = FindViewById<TextView>(Resource.Id.statusView);
 
@@ -73,12 +75,15 @@ namespace HOTAYI_MWMS
             switch (item.ItemId)
             {
                 case Resource.Id.navigation_receive:
+                    this.SupportActionBar.Title = "Receive Item";
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frg_container, recv_frag, "RecvFrag").Commit();
                     return true;
                 case Resource.Id.navigation_store:
+                    this.SupportActionBar.Title = "Store Item";
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frg_container, str_frag, "StrFrag").Commit();
                     return true;
                 case Resource.Id.navigation_issue:
+                    this.SupportActionBar.Title = "Issue Item";
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frg_container, iss_frag, "IssFrag").Commit();
                     return true;
             }

@@ -12,6 +12,8 @@ using System.Text;
 using AndroidX.Fragment.App;
 using Fragment = AndroidX.Fragment.App.Fragment;
 using DialogFragment = AndroidX.Fragment.App.DialogFragment;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace HOTAYI_MWMS
 {
@@ -45,6 +47,7 @@ namespace HOTAYI_MWMS
             btn_nav.Click += delegate
             {
                 Dismiss();
+                //do something 
             };
 
             return view;

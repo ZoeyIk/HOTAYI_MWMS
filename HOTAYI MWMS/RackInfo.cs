@@ -18,5 +18,6 @@ namespace HOTAYI_MWMS
         public int rackCol { get; set; }
         public int rackRow { get; set; }
         public string[] itemsStored { get; set; }
+        public string orientation { get; set; }
     }
 }

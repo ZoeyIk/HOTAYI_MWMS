@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using AndroidX.CardView;
 using AndroidX.CardView.Widget;
+using Newtonsoft.Json;
 
 namespace HOTAYI_MWMS
 {
@@ -19,6 +20,7 @@ namespace HOTAYI_MWMS
         CardView card_scan, card_search, card_map, card_logout;
         TextView empID, empName;
         long lastPress;
+        private List<EmpInfo> emp;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,14 +30,11 @@ namespace HOTAYI_MWMS
             SetContentView(Resource.Layout.activity_home);
 
             ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfo", FileCreationMode.Private);
+            emp = JsonConvert.DeserializeObject<List<EmpInfo>>(pref.GetString("EmpInfo", String.Empty));
             empID = FindViewById<TextView>(Resource.Id.empID);
             empName = FindViewById<TextView>(Resource.Id.empName);
-            empID.Text = pref.GetString("EmpID", String.Empty);
-            empName.Text = pref.GetString("EmpName", String.Empty);
-
-            ISharedPreferencesEditor editor = pref.Edit();
-            editor.PutString("Reels", tJson);
-            editor.Apply();
+            empID.Text = emp[0].empID;
+            empName.Text = emp[0].empName;
 
             card_scan = FindViewById<CardView>(Resource.Id.card_scan);
             card_scan.Click += delegate
@@ -84,19 +83,5 @@ namespace HOTAYI_MWMS
                 this.FinishAffinity();
             }
         }
-
-        private string tJson = @"
-        [
-            { 'partNum': 'PartA', 'serialNum': 'PartA_100_1', 'qty': 100, 'rackID': 'Rack1', 'location': 'Warehouse' },
-            { 'partNum': 'PartA', 'serialNum': 'PartA_100_2', 'qty': 100, 'rackID': 'Rack1', 'location': 'Warehouse' },
-            { 'partNum': 'PartA', 'serialNum': 'PartA_200_3', 'qty': 200, 'rackID': 'Rack2', 'location': 'Warehouse' },
-            { 'partNum': 'PartA', 'serialNum': 'PartA_200_4', 'qty': 200, 'rackID': 'Rack3', 'location': 'Warehouse' },
-            { 'partNum': 'PartA', 'serialNum': 'PartA_100_5', 'qty': 100, 'prodLine': '1', 'location': 'Production' },
-            { 'partNum': 'PartB', 'serialNum': 'PartB_100_1', 'qty': 100, 'rackID': 'Rack1', 'location': 'Warehouse' },
-            { 'partNum': 'PartB', 'serialNum': 'PartB_100_2', 'qty': 100, 'rackID': 'Rack5', 'location': 'Warehouse' },
-            { 'partNum': 'PartB', 'serialNum': 'PartB_200_3', 'qty': 200, 'rackID': 'Rack4', 'location': 'Warehouse' },
-            { 'partNum': 'PartB', 'serialNum': 'PartB_200_4', 'qty': 200, 'rackID': 'Rack3', 'location': 'Warehouse' },
-            { 'partNum': 'PartB', 'serialNum': 'PartB_100_5', 'qty': 100, 'prodLine': '2', 'location': 'Production' }
-        ]";
     }
 }

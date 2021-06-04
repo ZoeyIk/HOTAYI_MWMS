@@ -25,6 +25,192 @@ namespace HOTAYI_MWMS
 		
 		public static void UpdateIdValues()
 		{
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.alpha = global::HOTAYI_MWMS.Resource.Attribute.alpha;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.coordinatorLayoutStyle = global::HOTAYI_MWMS.Resource.Attribute.coordinatorLayoutStyle;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.font = global::HOTAYI_MWMS.Resource.Attribute.font;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.fontProviderAuthority = global::HOTAYI_MWMS.Resource.Attribute.fontProviderAuthority;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.fontProviderCerts = global::HOTAYI_MWMS.Resource.Attribute.fontProviderCerts;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.fontProviderFetchStrategy = global::HOTAYI_MWMS.Resource.Attribute.fontProviderFetchStrategy;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.fontProviderFetchTimeout = global::HOTAYI_MWMS.Resource.Attribute.fontProviderFetchTimeout;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.fontProviderPackage = global::HOTAYI_MWMS.Resource.Attribute.fontProviderPackage;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.fontProviderQuery = global::HOTAYI_MWMS.Resource.Attribute.fontProviderQuery;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.fontStyle = global::HOTAYI_MWMS.Resource.Attribute.fontStyle;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.fontVariationSettings = global::HOTAYI_MWMS.Resource.Attribute.fontVariationSettings;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.fontWeight = global::HOTAYI_MWMS.Resource.Attribute.fontWeight;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.keylines = global::HOTAYI_MWMS.Resource.Attribute.keylines;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.layout_anchor = global::HOTAYI_MWMS.Resource.Attribute.layout_anchor;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.layout_anchorGravity = global::HOTAYI_MWMS.Resource.Attribute.layout_anchorGravity;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.layout_behavior = global::HOTAYI_MWMS.Resource.Attribute.layout_behavior;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.layout_dodgeInsetEdges = global::HOTAYI_MWMS.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.layout_insetEdge = global::HOTAYI_MWMS.Resource.Attribute.layout_insetEdge;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.layout_keyline = global::HOTAYI_MWMS.Resource.Attribute.layout_keyline;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.statusBarBackground = global::HOTAYI_MWMS.Resource.Attribute.statusBarBackground;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Attribute.ttcIndex = global::HOTAYI_MWMS.Resource.Attribute.ttcIndex;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Color.browser_actions_bg_grey = global::HOTAYI_MWMS.Resource.Color.browser_actions_bg_grey;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Color.browser_actions_divider_color = global::HOTAYI_MWMS.Resource.Color.browser_actions_divider_color;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Color.browser_actions_text_color = global::HOTAYI_MWMS.Resource.Color.browser_actions_text_color;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Color.browser_actions_title_color = global::HOTAYI_MWMS.Resource.Color.browser_actions_title_color;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Color.notification_action_color_filter = global::HOTAYI_MWMS.Resource.Color.notification_action_color_filter;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Color.notification_icon_bg_color = global::HOTAYI_MWMS.Resource.Color.notification_icon_bg_color;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Color.ripple_material_light = global::HOTAYI_MWMS.Resource.Color.ripple_material_light;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Color.secondary_text_default_material_light = global::HOTAYI_MWMS.Resource.Color.secondary_text_default_material_light;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.browser_actions_context_menu_max_width = global::HOTAYI_MWMS.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.browser_actions_context_menu_min_padding = global::HOTAYI_MWMS.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.compat_button_inset_horizontal_material = global::HOTAYI_MWMS.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.compat_button_inset_vertical_material = global::HOTAYI_MWMS.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.compat_button_padding_horizontal_material = global::HOTAYI_MWMS.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.compat_button_padding_vertical_material = global::HOTAYI_MWMS.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.compat_control_corner_material = global::HOTAYI_MWMS.Resource.Dimension.compat_control_corner_material;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.compat_notification_large_icon_max_height = global::HOTAYI_MWMS.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.compat_notification_large_icon_max_width = global::HOTAYI_MWMS.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_action_icon_size = global::HOTAYI_MWMS.Resource.Dimension.notification_action_icon_size;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_action_text_size = global::HOTAYI_MWMS.Resource.Dimension.notification_action_text_size;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_big_circle_margin = global::HOTAYI_MWMS.Resource.Dimension.notification_big_circle_margin;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_content_margin_start = global::HOTAYI_MWMS.Resource.Dimension.notification_content_margin_start;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_large_icon_height = global::HOTAYI_MWMS.Resource.Dimension.notification_large_icon_height;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_large_icon_width = global::HOTAYI_MWMS.Resource.Dimension.notification_large_icon_width;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_main_column_padding_top = global::HOTAYI_MWMS.Resource.Dimension.notification_main_column_padding_top;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_media_narrow_margin = global::HOTAYI_MWMS.Resource.Dimension.notification_media_narrow_margin;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_right_icon_size = global::HOTAYI_MWMS.Resource.Dimension.notification_right_icon_size;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_right_side_padding_top = global::HOTAYI_MWMS.Resource.Dimension.notification_right_side_padding_top;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_small_icon_background_padding = global::HOTAYI_MWMS.Resource.Dimension.notification_small_icon_background_padding;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_small_icon_size_as_large = global::HOTAYI_MWMS.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_subtext_size = global::HOTAYI_MWMS.Resource.Dimension.notification_subtext_size;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_top_pad = global::HOTAYI_MWMS.Resource.Dimension.notification_top_pad;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Dimension.notification_top_pad_large_text = global::HOTAYI_MWMS.Resource.Dimension.notification_top_pad_large_text;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_action_background = global::HOTAYI_MWMS.Resource.Drawable.notification_action_background;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_bg = global::HOTAYI_MWMS.Resource.Drawable.notification_bg;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_bg_low = global::HOTAYI_MWMS.Resource.Drawable.notification_bg_low;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_bg_low_normal = global::HOTAYI_MWMS.Resource.Drawable.notification_bg_low_normal;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_bg_low_pressed = global::HOTAYI_MWMS.Resource.Drawable.notification_bg_low_pressed;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_bg_normal = global::HOTAYI_MWMS.Resource.Drawable.notification_bg_normal;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_bg_normal_pressed = global::HOTAYI_MWMS.Resource.Drawable.notification_bg_normal_pressed;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_icon_background = global::HOTAYI_MWMS.Resource.Drawable.notification_icon_background;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_template_icon_bg = global::HOTAYI_MWMS.Resource.Drawable.notification_template_icon_bg;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_template_icon_low_bg = global::HOTAYI_MWMS.Resource.Drawable.notification_template_icon_low_bg;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notification_tile_bg = global::HOTAYI_MWMS.Resource.Drawable.notification_tile_bg;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Drawable.notify_panel_notification_icon_bg = global::HOTAYI_MWMS.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.actions = global::HOTAYI_MWMS.Resource.Id.actions;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.action_container = global::HOTAYI_MWMS.Resource.Id.action_container;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.action_divider = global::HOTAYI_MWMS.Resource.Id.action_divider;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.action_image = global::HOTAYI_MWMS.Resource.Id.action_image;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.action_text = global::HOTAYI_MWMS.Resource.Id.action_text;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.all = global::HOTAYI_MWMS.Resource.Id.all;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.async = global::HOTAYI_MWMS.Resource.Id.async;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.blocking = global::HOTAYI_MWMS.Resource.Id.blocking;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.bottom = global::HOTAYI_MWMS.Resource.Id.bottom;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.browser_actions_header_text = global::HOTAYI_MWMS.Resource.Id.browser_actions_header_text;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.browser_actions_menu_items = global::HOTAYI_MWMS.Resource.Id.browser_actions_menu_items;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.browser_actions_menu_item_icon = global::HOTAYI_MWMS.Resource.Id.browser_actions_menu_item_icon;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.browser_actions_menu_item_text = global::HOTAYI_MWMS.Resource.Id.browser_actions_menu_item_text;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.browser_actions_menu_view = global::HOTAYI_MWMS.Resource.Id.browser_actions_menu_view;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.center = global::HOTAYI_MWMS.Resource.Id.center;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.center_horizontal = global::HOTAYI_MWMS.Resource.Id.center_horizontal;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.center_vertical = global::HOTAYI_MWMS.Resource.Id.center_vertical;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.chronometer = global::HOTAYI_MWMS.Resource.Id.chronometer;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.clip_horizontal = global::HOTAYI_MWMS.Resource.Id.clip_horizontal;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.clip_vertical = global::HOTAYI_MWMS.Resource.Id.clip_vertical;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.end = global::HOTAYI_MWMS.Resource.Id.end;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.fill = global::HOTAYI_MWMS.Resource.Id.fill;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.fill_horizontal = global::HOTAYI_MWMS.Resource.Id.fill_horizontal;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.fill_vertical = global::HOTAYI_MWMS.Resource.Id.fill_vertical;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.forever = global::HOTAYI_MWMS.Resource.Id.forever;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.icon = global::HOTAYI_MWMS.Resource.Id.icon;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.icon_group = global::HOTAYI_MWMS.Resource.Id.icon_group;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.info = global::HOTAYI_MWMS.Resource.Id.info;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.italic = global::HOTAYI_MWMS.Resource.Id.italic;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.left = global::HOTAYI_MWMS.Resource.Id.left;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.line1 = global::HOTAYI_MWMS.Resource.Id.line1;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.line3 = global::HOTAYI_MWMS.Resource.Id.line3;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.none = global::HOTAYI_MWMS.Resource.Id.none;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.normal = global::HOTAYI_MWMS.Resource.Id.normal;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.notification_background = global::HOTAYI_MWMS.Resource.Id.notification_background;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.notification_main_column = global::HOTAYI_MWMS.Resource.Id.notification_main_column;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.notification_main_column_container = global::HOTAYI_MWMS.Resource.Id.notification_main_column_container;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.right = global::HOTAYI_MWMS.Resource.Id.right;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.right_icon = global::HOTAYI_MWMS.Resource.Id.right_icon;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.right_side = global::HOTAYI_MWMS.Resource.Id.right_side;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.start = global::HOTAYI_MWMS.Resource.Id.start;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.tag_transition_group = global::HOTAYI_MWMS.Resource.Id.tag_transition_group;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.tag_unhandled_key_event_manager = global::HOTAYI_MWMS.Resource.Id.tag_unhandled_key_event_manager;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.tag_unhandled_key_listeners = global::HOTAYI_MWMS.Resource.Id.tag_unhandled_key_listeners;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.text = global::HOTAYI_MWMS.Resource.Id.text;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.text2 = global::HOTAYI_MWMS.Resource.Id.text2;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.time = global::HOTAYI_MWMS.Resource.Id.time;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.title = global::HOTAYI_MWMS.Resource.Id.title;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Id.top = global::HOTAYI_MWMS.Resource.Id.top;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Integer.status_bar_notification_info_maxnum = global::HOTAYI_MWMS.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Layout.browser_actions_context_menu_page = global::HOTAYI_MWMS.Resource.Layout.browser_actions_context_menu_page;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Layout.browser_actions_context_menu_row = global::HOTAYI_MWMS.Resource.Layout.browser_actions_context_menu_row;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Layout.notification_action = global::HOTAYI_MWMS.Resource.Layout.notification_action;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Layout.notification_action_tombstone = global::HOTAYI_MWMS.Resource.Layout.notification_action_tombstone;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Layout.notification_template_custom_big = global::HOTAYI_MWMS.Resource.Layout.notification_template_custom_big;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Layout.notification_template_icon_group = global::HOTAYI_MWMS.Resource.Layout.notification_template_icon_group;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Layout.notification_template_part_chronometer = global::HOTAYI_MWMS.Resource.Layout.notification_template_part_chronometer;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Layout.notification_template_part_time = global::HOTAYI_MWMS.Resource.Layout.notification_template_part_time;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.String.ApplicationName = global::HOTAYI_MWMS.Resource.String.ApplicationName;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.String.Hello = global::HOTAYI_MWMS.Resource.String.Hello;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.String.status_bar_notification_info_overflow = global::HOTAYI_MWMS.Resource.String.status_bar_notification_info_overflow;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Style.TextAppearance_Compat_Notification = global::HOTAYI_MWMS.Resource.Style.TextAppearance_Compat_Notification;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Style.TextAppearance_Compat_Notification_Info = global::HOTAYI_MWMS.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::HOTAYI_MWMS.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Style.TextAppearance_Compat_Notification_Time = global::HOTAYI_MWMS.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Style.TextAppearance_Compat_Notification_Title = global::HOTAYI_MWMS.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Style.Widget_Compat_NotificationActionContainer = global::HOTAYI_MWMS.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Style.Widget_Compat_NotificationActionText = global::HOTAYI_MWMS.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Style.Widget_Support_CoordinatorLayout = global::HOTAYI_MWMS.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.ColorStateListItem = global::HOTAYI_MWMS.Resource.Styleable.ColorStateListItem;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.ColorStateListItem_alpha = global::HOTAYI_MWMS.Resource.Styleable.ColorStateListItem_alpha;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.ColorStateListItem_android_alpha = global::HOTAYI_MWMS.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.ColorStateListItem_android_color = global::HOTAYI_MWMS.Resource.Styleable.ColorStateListItem_android_color;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout_keylines = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout_Layout = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::HOTAYI_MWMS.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamily = global::HOTAYI_MWMS.Resource.Styleable.FontFamily;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont_android_font = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont_android_font;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont_android_fontStyle = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont_android_fontWeight = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont_font = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont_font;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont_fontStyle = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont_fontWeight = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamilyFont_ttcIndex = global::HOTAYI_MWMS.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamily_fontProviderAuthority = global::HOTAYI_MWMS.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamily_fontProviderCerts = global::HOTAYI_MWMS.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::HOTAYI_MWMS.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::HOTAYI_MWMS.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamily_fontProviderPackage = global::HOTAYI_MWMS.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.FontFamily_fontProviderQuery = global::HOTAYI_MWMS.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor = global::HOTAYI_MWMS.Resource.Styleable.GradientColor;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColorItem = global::HOTAYI_MWMS.Resource.Styleable.GradientColorItem;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColorItem_android_color = global::HOTAYI_MWMS.Resource.Styleable.GradientColorItem_android_color;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColorItem_android_offset = global::HOTAYI_MWMS.Resource.Styleable.GradientColorItem_android_offset;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_centerColor = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_centerColor;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_centerX = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_centerX;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_centerY = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_centerY;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_endColor = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_endColor;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_endX = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_endX;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_endY = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_endY;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_gradientRadius = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_startColor = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_startColor;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_startX = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_startX;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_startY = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_startY;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_tileMode = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_tileMode;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Styleable.GradientColor_android_type = global::HOTAYI_MWMS.Resource.Styleable.GradientColor_android_type;
+			global::Microsoft.WindowsAzure.MobileServices.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::HOTAYI_MWMS.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
+			global::PCLCrypto.Resource.String.ApplicationName = global::HOTAYI_MWMS.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.Hello = global::HOTAYI_MWMS.Resource.String.Hello;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::HOTAYI_MWMS.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::HOTAYI_MWMS.Resource.Attribute.font;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::HOTAYI_MWMS.Resource.Attribute.fontProviderAuthority;
@@ -6101,548 +6287,551 @@ namespace HOTAYI_MWMS
 			// aapt resource value: 0x7F0800C6
 			public const int graph_wrap = 2131230918;
 			
-			// aapt resource value: 0x7F0800C8
-			public const int grouping = 2131230920;
+			// aapt resource value: 0x7F0800C7
+			public const int gridLayout1 = 2131230919;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int groups = 2131230921;
-			
-			// aapt resource value: 0x7F0800C7
-			public const int group_divider = 2131230919;
+			public const int grouping = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int guideline = 2131230922;
+			public const int groups = 2131230922;
+			
+			// aapt resource value: 0x7F0800C8
+			public const int group_divider = 2131230920;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int gv_rackInfo = 2131230923;
+			public const int guideline = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int header_title = 2131230924;
+			public const int gv_rackInfo = 2131230924;
 			
 			// aapt resource value: 0x7F0800CD
-			public const int hideable = 2131230925;
+			public const int header_title = 2131230925;
 			
 			// aapt resource value: 0x7F0800CE
-			public const int home = 2131230926;
+			public const int hideable = 2131230926;
 			
 			// aapt resource value: 0x7F0800CF
-			public const int homeAsUp = 2131230927;
+			public const int home = 2131230927;
 			
 			// aapt resource value: 0x7F0800D0
-			public const int honorRequest = 2131230928;
+			public const int homeAsUp = 2131230928;
 			
 			// aapt resource value: 0x7F0800D1
-			public const int horizontal = 2131230929;
+			public const int honorRequest = 2131230929;
 			
 			// aapt resource value: 0x7F0800D2
-			public const int icon = 2131230930;
+			public const int horizontal = 2131230930;
 			
 			// aapt resource value: 0x7F0800D3
-			public const int icon_group = 2131230931;
+			public const int icon = 2131230931;
 			
 			// aapt resource value: 0x7F0800D4
-			public const int ifRoom = 2131230932;
+			public const int icon_group = 2131230932;
 			
 			// aapt resource value: 0x7F0800D5
-			public const int ignore = 2131230933;
+			public const int ifRoom = 2131230933;
 			
 			// aapt resource value: 0x7F0800D6
-			public const int ignoreRequest = 2131230934;
+			public const int ignore = 2131230934;
 			
 			// aapt resource value: 0x7F0800D7
-			public const int image = 2131230935;
+			public const int ignoreRequest = 2131230935;
 			
 			// aapt resource value: 0x7F0800D8
-			public const int info = 2131230936;
+			public const int image = 2131230936;
 			
 			// aapt resource value: 0x7F0800D9
-			public const int input1 = 2131230937;
+			public const int info = 2131230937;
 			
 			// aapt resource value: 0x7F0800DA
-			public const int input2 = 2131230938;
+			public const int input1 = 2131230938;
 			
 			// aapt resource value: 0x7F0800DB
-			public const int inputLay_req1 = 2131230939;
+			public const int input2 = 2131230939;
 			
 			// aapt resource value: 0x7F0800DC
-			public const int inputLay_req2 = 2131230940;
+			public const int inputLay_req1 = 2131230940;
 			
 			// aapt resource value: 0x7F0800DD
-			public const int input_loginID = 2131230941;
+			public const int inputLay_req2 = 2131230941;
 			
 			// aapt resource value: 0x7F0800DE
-			public const int input_partNum = 2131230942;
+			public const int input_loginID = 2131230942;
 			
 			// aapt resource value: 0x7F0800DF
-			public const int input_password = 2131230943;
+			public const int input_partNum = 2131230943;
 			
 			// aapt resource value: 0x7F0800E0
-			public const int input_req_part = 2131230944;
+			public const int input_password = 2131230944;
 			
 			// aapt resource value: 0x7F0800E1
-			public const int input_req_qty = 2131230945;
+			public const int input_req_part = 2131230945;
 			
 			// aapt resource value: 0x7F0800E2
-			public const int invisible = 2131230946;
+			public const int input_req_qty = 2131230946;
 			
 			// aapt resource value: 0x7F0800E3
-			public const int inward = 2131230947;
+			public const int invisible = 2131230947;
 			
 			// aapt resource value: 0x7F0800E4
-			public const int italic = 2131230948;
+			public const int inward = 2131230948;
 			
 			// aapt resource value: 0x7F0800E5
-			public const int item_touch_helper_previous_elevation = 2131230949;
+			public const int italic = 2131230949;
 			
 			// aapt resource value: 0x7F0800E6
-			public const int jumpToEnd = 2131230950;
+			public const int item_touch_helper_previous_elevation = 2131230950;
 			
 			// aapt resource value: 0x7F0800E7
-			public const int jumpToStart = 2131230951;
-			
-			// aapt resource value: 0x7F0800E9
-			public const int labeled = 2131230953;
+			public const int jumpToEnd = 2131230951;
 			
 			// aapt resource value: 0x7F0800E8
-			public const int labelGroup = 2131230952;
+			public const int jumpToStart = 2131230952;
 			
 			// aapt resource value: 0x7F0800EA
-			public const int largeLabel = 2131230954;
+			public const int labeled = 2131230954;
+			
+			// aapt resource value: 0x7F0800E9
+			public const int labelGroup = 2131230953;
 			
 			// aapt resource value: 0x7F0800EB
-			public const int layout = 2131230955;
+			public const int largeLabel = 2131230955;
 			
 			// aapt resource value: 0x7F0800EC
-			public const int left = 2131230956;
+			public const int layout = 2131230956;
 			
 			// aapt resource value: 0x7F0800ED
-			public const int leftToRight = 2131230957;
+			public const int left = 2131230957;
 			
 			// aapt resource value: 0x7F0800EE
-			public const int line1 = 2131230958;
+			public const int leftToRight = 2131230958;
 			
 			// aapt resource value: 0x7F0800EF
-			public const int line3 = 2131230959;
+			public const int line1 = 2131230959;
 			
 			// aapt resource value: 0x7F0800F0
-			public const int linear = 2131230960;
+			public const int line3 = 2131230960;
 			
 			// aapt resource value: 0x7F0800F1
-			public const int listMode = 2131230961;
+			public const int linear = 2131230961;
 			
 			// aapt resource value: 0x7F0800F2
-			public const int list_item = 2131230962;
+			public const int listMode = 2131230962;
 			
 			// aapt resource value: 0x7F0800F3
-			public const int mapItem_rack = 2131230963;
+			public const int list_item = 2131230963;
 			
 			// aapt resource value: 0x7F0800F4
-			public const int masked = 2131230964;
+			public const int mapItem_rack = 2131230964;
 			
 			// aapt resource value: 0x7F0800F5
-			public const int material_clock_display = 2131230965;
+			public const int masked = 2131230965;
 			
 			// aapt resource value: 0x7F0800F6
-			public const int material_clock_face = 2131230966;
+			public const int material_clock_display = 2131230966;
 			
 			// aapt resource value: 0x7F0800F7
-			public const int material_clock_hand = 2131230967;
+			public const int material_clock_face = 2131230967;
 			
 			// aapt resource value: 0x7F0800F8
-			public const int material_clock_period_am_button = 2131230968;
+			public const int material_clock_hand = 2131230968;
 			
 			// aapt resource value: 0x7F0800F9
-			public const int material_clock_period_pm_button = 2131230969;
+			public const int material_clock_period_am_button = 2131230969;
 			
 			// aapt resource value: 0x7F0800FA
-			public const int material_clock_period_toggle = 2131230970;
+			public const int material_clock_period_pm_button = 2131230970;
 			
 			// aapt resource value: 0x7F0800FB
-			public const int material_hour_text_input = 2131230971;
+			public const int material_clock_period_toggle = 2131230971;
 			
 			// aapt resource value: 0x7F0800FC
-			public const int material_hour_tv = 2131230972;
+			public const int material_hour_text_input = 2131230972;
 			
 			// aapt resource value: 0x7F0800FD
-			public const int material_label = 2131230973;
+			public const int material_hour_tv = 2131230973;
 			
 			// aapt resource value: 0x7F0800FE
-			public const int material_minute_text_input = 2131230974;
+			public const int material_label = 2131230974;
 			
 			// aapt resource value: 0x7F0800FF
-			public const int material_minute_tv = 2131230975;
+			public const int material_minute_text_input = 2131230975;
 			
 			// aapt resource value: 0x7F080100
-			public const int material_textinput_timepicker = 2131230976;
+			public const int material_minute_tv = 2131230976;
 			
 			// aapt resource value: 0x7F080101
-			public const int material_timepicker_cancel_button = 2131230977;
+			public const int material_textinput_timepicker = 2131230977;
 			
 			// aapt resource value: 0x7F080102
-			public const int material_timepicker_container = 2131230978;
+			public const int material_timepicker_cancel_button = 2131230978;
 			
 			// aapt resource value: 0x7F080103
-			public const int material_timepicker_edit_text = 2131230979;
+			public const int material_timepicker_container = 2131230979;
 			
 			// aapt resource value: 0x7F080104
-			public const int material_timepicker_mode_button = 2131230980;
+			public const int material_timepicker_edit_text = 2131230980;
 			
 			// aapt resource value: 0x7F080105
-			public const int material_timepicker_ok_button = 2131230981;
+			public const int material_timepicker_mode_button = 2131230981;
 			
 			// aapt resource value: 0x7F080106
-			public const int material_timepicker_view = 2131230982;
+			public const int material_timepicker_ok_button = 2131230982;
 			
 			// aapt resource value: 0x7F080107
-			public const int material_value_index = 2131230983;
+			public const int material_timepicker_view = 2131230983;
 			
 			// aapt resource value: 0x7F080108
-			public const int media_actions = 2131230984;
+			public const int material_value_index = 2131230984;
 			
 			// aapt resource value: 0x7F080109
-			public const int media_controller_compat_view_tag = 2131230985;
+			public const int media_actions = 2131230985;
 			
 			// aapt resource value: 0x7F08010A
-			public const int message = 2131230986;
+			public const int media_controller_compat_view_tag = 2131230986;
+			
+			// aapt resource value: 0x7F08010B
+			public const int message = 2131230987;
 			
 			// aapt resource value: 0x7F080005
 			public const int META = 2131230725;
 			
-			// aapt resource value: 0x7F08010B
-			public const int middle = 2131230987;
-			
 			// aapt resource value: 0x7F08010C
-			public const int mini = 2131230988;
+			public const int middle = 2131230988;
 			
 			// aapt resource value: 0x7F08010D
-			public const int month_grid = 2131230989;
+			public const int mini = 2131230989;
 			
 			// aapt resource value: 0x7F08010E
-			public const int month_navigation_bar = 2131230990;
+			public const int month_grid = 2131230990;
 			
 			// aapt resource value: 0x7F08010F
-			public const int month_navigation_fragment_toggle = 2131230991;
+			public const int month_navigation_bar = 2131230991;
 			
 			// aapt resource value: 0x7F080110
-			public const int month_navigation_next = 2131230992;
+			public const int month_navigation_fragment_toggle = 2131230992;
 			
 			// aapt resource value: 0x7F080111
-			public const int month_navigation_previous = 2131230993;
+			public const int month_navigation_next = 2131230993;
 			
 			// aapt resource value: 0x7F080112
-			public const int month_title = 2131230994;
+			public const int month_navigation_previous = 2131230994;
 			
 			// aapt resource value: 0x7F080113
-			public const int motion_base = 2131230995;
+			public const int month_title = 2131230995;
 			
 			// aapt resource value: 0x7F080114
-			public const int mtrl_anchor_parent = 2131230996;
-			
-			// aapt resource value: 0x7F080116
-			public const int mtrl_calendar_days_of_week = 2131230998;
+			public const int motion_base = 2131230996;
 			
 			// aapt resource value: 0x7F080115
-			public const int mtrl_calendar_day_selector_frame = 2131230997;
+			public const int mtrl_anchor_parent = 2131230997;
 			
 			// aapt resource value: 0x7F080117
-			public const int mtrl_calendar_frame = 2131230999;
+			public const int mtrl_calendar_days_of_week = 2131230999;
+			
+			// aapt resource value: 0x7F080116
+			public const int mtrl_calendar_day_selector_frame = 2131230998;
 			
 			// aapt resource value: 0x7F080118
-			public const int mtrl_calendar_main_pane = 2131231000;
+			public const int mtrl_calendar_frame = 2131231000;
 			
 			// aapt resource value: 0x7F080119
-			public const int mtrl_calendar_months = 2131231001;
+			public const int mtrl_calendar_main_pane = 2131231001;
 			
 			// aapt resource value: 0x7F08011A
-			public const int mtrl_calendar_selection_frame = 2131231002;
+			public const int mtrl_calendar_months = 2131231002;
 			
 			// aapt resource value: 0x7F08011B
-			public const int mtrl_calendar_text_input_frame = 2131231003;
+			public const int mtrl_calendar_selection_frame = 2131231003;
 			
 			// aapt resource value: 0x7F08011C
-			public const int mtrl_calendar_year_selector_frame = 2131231004;
+			public const int mtrl_calendar_text_input_frame = 2131231004;
 			
 			// aapt resource value: 0x7F08011D
-			public const int mtrl_card_checked_layer_id = 2131231005;
+			public const int mtrl_calendar_year_selector_frame = 2131231005;
 			
 			// aapt resource value: 0x7F08011E
-			public const int mtrl_child_content_container = 2131231006;
+			public const int mtrl_card_checked_layer_id = 2131231006;
 			
 			// aapt resource value: 0x7F08011F
-			public const int mtrl_internal_children_alpha_tag = 2131231007;
+			public const int mtrl_child_content_container = 2131231007;
 			
 			// aapt resource value: 0x7F080120
-			public const int mtrl_motion_snapshot_view = 2131231008;
+			public const int mtrl_internal_children_alpha_tag = 2131231008;
 			
 			// aapt resource value: 0x7F080121
-			public const int mtrl_picker_fullscreen = 2131231009;
+			public const int mtrl_motion_snapshot_view = 2131231009;
 			
 			// aapt resource value: 0x7F080122
-			public const int mtrl_picker_header = 2131231010;
+			public const int mtrl_picker_fullscreen = 2131231010;
 			
 			// aapt resource value: 0x7F080123
-			public const int mtrl_picker_header_selection_text = 2131231011;
+			public const int mtrl_picker_header = 2131231011;
 			
 			// aapt resource value: 0x7F080124
-			public const int mtrl_picker_header_title_and_selection = 2131231012;
+			public const int mtrl_picker_header_selection_text = 2131231012;
 			
 			// aapt resource value: 0x7F080125
-			public const int mtrl_picker_header_toggle = 2131231013;
+			public const int mtrl_picker_header_title_and_selection = 2131231013;
 			
 			// aapt resource value: 0x7F080126
-			public const int mtrl_picker_text_input_date = 2131231014;
+			public const int mtrl_picker_header_toggle = 2131231014;
 			
 			// aapt resource value: 0x7F080127
-			public const int mtrl_picker_text_input_range_end = 2131231015;
+			public const int mtrl_picker_text_input_date = 2131231015;
 			
 			// aapt resource value: 0x7F080128
-			public const int mtrl_picker_text_input_range_start = 2131231016;
+			public const int mtrl_picker_text_input_range_end = 2131231016;
 			
 			// aapt resource value: 0x7F080129
-			public const int mtrl_picker_title_text = 2131231017;
+			public const int mtrl_picker_text_input_range_start = 2131231017;
 			
 			// aapt resource value: 0x7F08012A
-			public const int mtrl_view_tag_bottom_padding = 2131231018;
+			public const int mtrl_picker_title_text = 2131231018;
 			
 			// aapt resource value: 0x7F08012B
-			public const int multiply = 2131231019;
+			public const int mtrl_view_tag_bottom_padding = 2131231019;
 			
 			// aapt resource value: 0x7F08012C
-			public const int navigation = 2131231020;
+			public const int multiply = 2131231020;
 			
 			// aapt resource value: 0x7F08012D
-			public const int navigation_header_container = 2131231021;
+			public const int navigation = 2131231021;
 			
 			// aapt resource value: 0x7F08012E
-			public const int navigation_issue = 2131231022;
+			public const int navigation_header_container = 2131231022;
 			
 			// aapt resource value: 0x7F08012F
-			public const int navigation_receive = 2131231023;
+			public const int navigation_issue = 2131231023;
 			
 			// aapt resource value: 0x7F080130
-			public const int navigation_store = 2131231024;
+			public const int navigation_receive = 2131231024;
 			
 			// aapt resource value: 0x7F080131
-			public const int never = 2131231025;
-			
-			// aapt resource value: 0x7F080133
-			public const int none = 2131231027;
-			
-			// aapt resource value: 0x7F080134
-			public const int normal = 2131231028;
+			public const int navigation_store = 2131231025;
 			
 			// aapt resource value: 0x7F080132
-			public const int noScroll = 2131231026;
+			public const int never = 2131231026;
+			
+			// aapt resource value: 0x7F080134
+			public const int none = 2131231028;
 			
 			// aapt resource value: 0x7F080135
-			public const int notification_background = 2131231029;
+			public const int normal = 2131231029;
+			
+			// aapt resource value: 0x7F080133
+			public const int noScroll = 2131231027;
 			
 			// aapt resource value: 0x7F080136
-			public const int notification_main_column = 2131231030;
+			public const int notification_background = 2131231030;
 			
 			// aapt resource value: 0x7F080137
-			public const int notification_main_column_container = 2131231031;
+			public const int notification_main_column = 2131231031;
+			
+			// aapt resource value: 0x7F080138
+			public const int notification_main_column_container = 2131231032;
 			
 			// aapt resource value: 0x7F080006
 			public const int NO_DEBUG = 2131230726;
 			
-			// aapt resource value: 0x7F080138
-			public const int off = 2131231032;
-			
 			// aapt resource value: 0x7F080139
-			public const int on = 2131231033;
+			public const int off = 2131231033;
 			
 			// aapt resource value: 0x7F08013A
-			public const int outline = 2131231034;
+			public const int on = 2131231034;
 			
 			// aapt resource value: 0x7F08013B
-			public const int outward = 2131231035;
+			public const int outline = 2131231035;
 			
 			// aapt resource value: 0x7F08013C
-			public const int packed = 2131231036;
+			public const int outward = 2131231036;
 			
 			// aapt resource value: 0x7F08013D
-			public const int parallax = 2131231037;
+			public const int packed = 2131231037;
 			
 			// aapt resource value: 0x7F08013E
-			public const int parent = 2131231038;
+			public const int parallax = 2131231038;
 			
 			// aapt resource value: 0x7F08013F
-			public const int parentPanel = 2131231039;
+			public const int parent = 2131231039;
 			
 			// aapt resource value: 0x7F080140
-			public const int parentRelative = 2131231040;
+			public const int parentPanel = 2131231040;
 			
 			// aapt resource value: 0x7F080141
-			public const int parent_matrix = 2131231041;
+			public const int parentRelative = 2131231041;
 			
 			// aapt resource value: 0x7F080142
-			public const int password_toggle = 2131231042;
+			public const int parent_matrix = 2131231042;
 			
 			// aapt resource value: 0x7F080143
-			public const int path = 2131231043;
+			public const int password_toggle = 2131231043;
 			
 			// aapt resource value: 0x7F080144
-			public const int pathRelative = 2131231044;
+			public const int path = 2131231044;
 			
 			// aapt resource value: 0x7F080145
-			public const int peekHeight = 2131231045;
+			public const int pathRelative = 2131231045;
 			
 			// aapt resource value: 0x7F080146
-			public const int percent = 2131231046;
+			public const int peekHeight = 2131231046;
 			
 			// aapt resource value: 0x7F080147
-			public const int pin = 2131231047;
+			public const int percent = 2131231047;
 			
 			// aapt resource value: 0x7F080148
-			public const int position = 2131231048;
+			public const int pin = 2131231048;
 			
 			// aapt resource value: 0x7F080149
-			public const int postLayout = 2131231049;
+			public const int position = 2131231049;
 			
 			// aapt resource value: 0x7F08014A
-			public const int progress_circular = 2131231050;
+			public const int postLayout = 2131231050;
 			
 			// aapt resource value: 0x7F08014B
-			public const int progress_horizontal = 2131231051;
+			public const int progress_circular = 2131231051;
 			
 			// aapt resource value: 0x7F08014C
-			public const int query_loc = 2131231052;
+			public const int progress_horizontal = 2131231052;
 			
 			// aapt resource value: 0x7F08014D
-			public const int query_qty = 2131231053;
+			public const int query_loc = 2131231053;
 			
 			// aapt resource value: 0x7F08014E
-			public const int query_rack = 2131231054;
+			public const int query_qty = 2131231054;
 			
 			// aapt resource value: 0x7F08014F
-			public const int query_serialN = 2131231055;
+			public const int query_rack = 2131231055;
 			
 			// aapt resource value: 0x7F080150
-			public const int radio = 2131231056;
+			public const int query_serialN = 2131231056;
 			
 			// aapt resource value: 0x7F080151
-			public const int ratio = 2131231057;
+			public const int radio = 2131231057;
 			
 			// aapt resource value: 0x7F080152
-			public const int rc_request = 2131231058;
+			public const int ratio = 2131231058;
 			
 			// aapt resource value: 0x7F080153
-			public const int rc_table = 2131231059;
+			public const int rc_request = 2131231059;
 			
 			// aapt resource value: 0x7F080154
-			public const int rectangles = 2131231060;
+			public const int rc_table = 2131231060;
 			
 			// aapt resource value: 0x7F080155
-			public const int request_partN = 2131231061;
+			public const int rectangles = 2131231061;
 			
 			// aapt resource value: 0x7F080156
-			public const int request_qty = 2131231062;
+			public const int request_partN = 2131231062;
 			
 			// aapt resource value: 0x7F080157
-			public const int reverseSawtooth = 2131231063;
+			public const int request_qty = 2131231063;
 			
 			// aapt resource value: 0x7F080158
-			public const int right = 2131231064;
+			public const int reverseSawtooth = 2131231064;
 			
 			// aapt resource value: 0x7F080159
-			public const int rightToLeft = 2131231065;
+			public const int right = 2131231065;
 			
 			// aapt resource value: 0x7F08015A
-			public const int right_icon = 2131231066;
+			public const int rightToLeft = 2131231066;
 			
 			// aapt resource value: 0x7F08015B
-			public const int right_side = 2131231067;
+			public const int right_icon = 2131231067;
 			
 			// aapt resource value: 0x7F08015C
-			public const int rounded = 2131231068;
+			public const int right_side = 2131231068;
 			
 			// aapt resource value: 0x7F08015D
-			public const int row_index_key = 2131231069;
+			public const int rounded = 2131231069;
 			
 			// aapt resource value: 0x7F08015E
-			public const int save_non_transition_alpha = 2131231070;
+			public const int row_index_key = 2131231070;
 			
 			// aapt resource value: 0x7F08015F
-			public const int save_overlay_view = 2131231071;
+			public const int save_non_transition_alpha = 2131231071;
 			
 			// aapt resource value: 0x7F080160
-			public const int sawtooth = 2131231072;
+			public const int save_overlay_view = 2131231072;
 			
 			// aapt resource value: 0x7F080161
-			public const int scale = 2131231073;
+			public const int sawtooth = 2131231073;
 			
 			// aapt resource value: 0x7F080162
-			public const int screen = 2131231074;
+			public const int scale = 2131231074;
 			
 			// aapt resource value: 0x7F080163
-			public const int scroll = 2131231075;
-			
-			// aapt resource value: 0x7F080167
-			public const int scrollable = 2131231079;
+			public const int screen = 2131231075;
 			
 			// aapt resource value: 0x7F080164
-			public const int scrollIndicatorDown = 2131231076;
-			
-			// aapt resource value: 0x7F080165
-			public const int scrollIndicatorUp = 2131231077;
-			
-			// aapt resource value: 0x7F080166
-			public const int scrollView = 2131231078;
+			public const int scroll = 2131231076;
 			
 			// aapt resource value: 0x7F080168
-			public const int search_badge = 2131231080;
+			public const int scrollable = 2131231080;
+			
+			// aapt resource value: 0x7F080165
+			public const int scrollIndicatorDown = 2131231077;
+			
+			// aapt resource value: 0x7F080166
+			public const int scrollIndicatorUp = 2131231078;
+			
+			// aapt resource value: 0x7F080167
+			public const int scrollView = 2131231079;
 			
 			// aapt resource value: 0x7F080169
-			public const int search_bar = 2131231081;
+			public const int search_badge = 2131231081;
 			
 			// aapt resource value: 0x7F08016A
-			public const int search_button = 2131231082;
+			public const int search_bar = 2131231082;
 			
 			// aapt resource value: 0x7F08016B
-			public const int search_close_btn = 2131231083;
+			public const int search_button = 2131231083;
 			
 			// aapt resource value: 0x7F08016C
-			public const int search_edit_frame = 2131231084;
+			public const int search_close_btn = 2131231084;
 			
 			// aapt resource value: 0x7F08016D
-			public const int search_go_btn = 2131231085;
+			public const int search_edit_frame = 2131231085;
 			
 			// aapt resource value: 0x7F08016E
-			public const int search_mag_icon = 2131231086;
+			public const int search_go_btn = 2131231086;
 			
 			// aapt resource value: 0x7F08016F
-			public const int search_plate = 2131231087;
+			public const int search_mag_icon = 2131231087;
 			
 			// aapt resource value: 0x7F080170
-			public const int search_src_text = 2131231088;
+			public const int search_plate = 2131231088;
 			
 			// aapt resource value: 0x7F080171
-			public const int search_voice_btn = 2131231089;
-			
-			// aapt resource value: 0x7F080173
-			public const int selected = 2131231091;
-			
-			// aapt resource value: 0x7F080174
-			public const int selection_type = 2131231092;
+			public const int search_src_text = 2131231089;
 			
 			// aapt resource value: 0x7F080172
-			public const int select_dialog_listview = 2131231090;
+			public const int search_voice_btn = 2131231090;
+			
+			// aapt resource value: 0x7F080174
+			public const int selected = 2131231092;
+			
+			// aapt resource value: 0x7F080175
+			public const int selection_type = 2131231093;
+			
+			// aapt resource value: 0x7F080173
+			public const int select_dialog_listview = 2131231091;
 			
 			// aapt resource value: 0x7F080007
 			public const int SHIFT = 2131230727;
 			
-			// aapt resource value: 0x7F080175
-			public const int shortcut = 2131231093;
-			
 			// aapt resource value: 0x7F080176
-			public const int showCustom = 2131231094;
+			public const int shortcut = 2131231094;
 			
 			// aapt resource value: 0x7F080177
-			public const int showHome = 2131231095;
+			public const int showCustom = 2131231095;
 			
 			// aapt resource value: 0x7F080178
-			public const int showTitle = 2131231096;
+			public const int showHome = 2131231096;
+			
+			// aapt resource value: 0x7F080179
+			public const int showTitle = 2131231097;
 			
 			// aapt resource value: 0x7F080008
 			public const int SHOW_ALL = 2131230728;
@@ -6653,107 +6842,104 @@ namespace HOTAYI_MWMS
 			// aapt resource value: 0x7F08000A
 			public const int SHOW_PROGRESS = 2131230730;
 			
-			// aapt resource value: 0x7F080179
-			public const int sin = 2131231097;
-			
 			// aapt resource value: 0x7F08017A
-			public const int skipCollapsed = 2131231098;
+			public const int sin = 2131231098;
 			
 			// aapt resource value: 0x7F08017B
-			public const int slide = 2131231099;
+			public const int skipCollapsed = 2131231099;
 			
 			// aapt resource value: 0x7F08017C
-			public const int smallLabel = 2131231100;
+			public const int slide = 2131231100;
 			
 			// aapt resource value: 0x7F08017D
-			public const int snackbar_action = 2131231101;
+			public const int smallLabel = 2131231101;
 			
 			// aapt resource value: 0x7F08017E
-			public const int snackbar_text = 2131231102;
+			public const int snackbar_action = 2131231102;
 			
 			// aapt resource value: 0x7F08017F
-			public const int snap = 2131231103;
+			public const int snackbar_text = 2131231103;
 			
 			// aapt resource value: 0x7F080180
-			public const int snapMargins = 2131231104;
+			public const int snap = 2131231104;
 			
 			// aapt resource value: 0x7F080181
-			public const int spacer = 2131231105;
+			public const int snapMargins = 2131231105;
 			
 			// aapt resource value: 0x7F080182
-			public const int special_effects_controller_view_tag = 2131231106;
+			public const int spacer = 2131231106;
 			
 			// aapt resource value: 0x7F080183
-			public const int spline = 2131231107;
+			public const int special_effects_controller_view_tag = 2131231107;
 			
 			// aapt resource value: 0x7F080184
-			public const int split_action_bar = 2131231108;
+			public const int spline = 2131231108;
 			
 			// aapt resource value: 0x7F080185
-			public const int spread = 2131231109;
+			public const int split_action_bar = 2131231109;
 			
 			// aapt resource value: 0x7F080186
-			public const int spread_inside = 2131231110;
+			public const int spread = 2131231110;
 			
 			// aapt resource value: 0x7F080187
-			public const int square = 2131231111;
+			public const int spread_inside = 2131231111;
 			
 			// aapt resource value: 0x7F080188
-			public const int src_atop = 2131231112;
+			public const int square = 2131231112;
 			
 			// aapt resource value: 0x7F080189
-			public const int src_in = 2131231113;
+			public const int src_atop = 2131231113;
 			
 			// aapt resource value: 0x7F08018A
-			public const int src_over = 2131231114;
+			public const int src_in = 2131231114;
 			
 			// aapt resource value: 0x7F08018B
-			public const int standard = 2131231115;
+			public const int src_over = 2131231115;
 			
 			// aapt resource value: 0x7F08018C
-			public const int start = 2131231116;
+			public const int standard = 2131231116;
 			
 			// aapt resource value: 0x7F08018D
-			public const int startHorizontal = 2131231117;
+			public const int start = 2131231117;
 			
 			// aapt resource value: 0x7F08018E
-			public const int startToEnd = 2131231118;
+			public const int startHorizontal = 2131231118;
 			
 			// aapt resource value: 0x7F08018F
-			public const int startVertical = 2131231119;
+			public const int startToEnd = 2131231119;
 			
 			// aapt resource value: 0x7F080190
-			public const int staticLayout = 2131231120;
+			public const int startVertical = 2131231120;
 			
 			// aapt resource value: 0x7F080191
-			public const int staticPostLayout = 2131231121;
+			public const int staticLayout = 2131231121;
 			
 			// aapt resource value: 0x7F080192
-			public const int statusView = 2131231122;
+			public const int staticPostLayout = 2131231122;
 			
 			// aapt resource value: 0x7F080193
-			public const int status_bar_latest_event_content = 2131231123;
+			public const int statusView = 2131231123;
 			
 			// aapt resource value: 0x7F080194
-			public const int stop = 2131231124;
+			public const int status_bar_latest_event_content = 2131231124;
 			
 			// aapt resource value: 0x7F080195
-			public const int stretch = 2131231125;
+			public const int stop = 2131231125;
 			
 			// aapt resource value: 0x7F080196
-			public const int submenuarrow = 2131231126;
+			public const int stretch = 2131231126;
 			
 			// aapt resource value: 0x7F080197
-			public const int submit_area = 2131231127;
+			public const int submenuarrow = 2131231127;
+			
+			// aapt resource value: 0x7F080198
+			public const int submit_area = 2131231128;
 			
 			// aapt resource value: 0x7F08000B
 			public const int SYM = 2131230731;
 			
 			// aapt resource value: 0x7F080199
-			public const int tableLayout1 = 2131231129;
-			
-			// aapt resource value: 0x7F080198
-			public const int tabMode = 2131231128;
+			public const int tabMode = 2131231129;
 			
 			// aapt resource value: 0x7F08019A
 			public const int tag_accessibility_actions = 2131231130;
@@ -7566,410 +7752,416 @@ namespace HOTAYI_MWMS
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7F0F0001
-			public const int abc_action_bar_home_description = 2131689473;
-			
-			// aapt resource value: 0x7F0F0002
-			public const int abc_action_bar_up_description = 2131689474;
-			
 			// aapt resource value: 0x7F0F0003
-			public const int abc_action_menu_overflow_description = 2131689475;
+			public const int abc_action_bar_home_description = 2131689475;
 			
 			// aapt resource value: 0x7F0F0004
-			public const int abc_action_mode_done = 2131689476;
-			
-			// aapt resource value: 0x7F0F0006
-			public const int abc_activitychooserview_choose_application = 2131689478;
+			public const int abc_action_bar_up_description = 2131689476;
 			
 			// aapt resource value: 0x7F0F0005
-			public const int abc_activity_chooser_view_see_all = 2131689477;
+			public const int abc_action_menu_overflow_description = 2131689477;
 			
-			// aapt resource value: 0x7F0F0007
-			public const int abc_capital_off = 2131689479;
+			// aapt resource value: 0x7F0F0006
+			public const int abc_action_mode_done = 2131689478;
 			
 			// aapt resource value: 0x7F0F0008
-			public const int abc_capital_on = 2131689480;
+			public const int abc_activitychooserview_choose_application = 2131689480;
+			
+			// aapt resource value: 0x7F0F0007
+			public const int abc_activity_chooser_view_see_all = 2131689479;
 			
 			// aapt resource value: 0x7F0F0009
-			public const int abc_menu_alt_shortcut_label = 2131689481;
+			public const int abc_capital_off = 2131689481;
 			
 			// aapt resource value: 0x7F0F000A
-			public const int abc_menu_ctrl_shortcut_label = 2131689482;
+			public const int abc_capital_on = 2131689482;
 			
 			// aapt resource value: 0x7F0F000B
-			public const int abc_menu_delete_shortcut_label = 2131689483;
+			public const int abc_menu_alt_shortcut_label = 2131689483;
 			
 			// aapt resource value: 0x7F0F000C
-			public const int abc_menu_enter_shortcut_label = 2131689484;
+			public const int abc_menu_ctrl_shortcut_label = 2131689484;
 			
 			// aapt resource value: 0x7F0F000D
-			public const int abc_menu_function_shortcut_label = 2131689485;
+			public const int abc_menu_delete_shortcut_label = 2131689485;
 			
 			// aapt resource value: 0x7F0F000E
-			public const int abc_menu_meta_shortcut_label = 2131689486;
+			public const int abc_menu_enter_shortcut_label = 2131689486;
 			
 			// aapt resource value: 0x7F0F000F
-			public const int abc_menu_shift_shortcut_label = 2131689487;
+			public const int abc_menu_function_shortcut_label = 2131689487;
 			
 			// aapt resource value: 0x7F0F0010
-			public const int abc_menu_space_shortcut_label = 2131689488;
+			public const int abc_menu_meta_shortcut_label = 2131689488;
 			
 			// aapt resource value: 0x7F0F0011
-			public const int abc_menu_sym_shortcut_label = 2131689489;
+			public const int abc_menu_shift_shortcut_label = 2131689489;
 			
 			// aapt resource value: 0x7F0F0012
-			public const int abc_prepend_shortcut_label = 2131689490;
-			
-			// aapt resource value: 0x7F0F0014
-			public const int abc_searchview_description_clear = 2131689492;
-			
-			// aapt resource value: 0x7F0F0015
-			public const int abc_searchview_description_query = 2131689493;
-			
-			// aapt resource value: 0x7F0F0016
-			public const int abc_searchview_description_search = 2131689494;
-			
-			// aapt resource value: 0x7F0F0017
-			public const int abc_searchview_description_submit = 2131689495;
-			
-			// aapt resource value: 0x7F0F0018
-			public const int abc_searchview_description_voice = 2131689496;
+			public const int abc_menu_space_shortcut_label = 2131689490;
 			
 			// aapt resource value: 0x7F0F0013
-			public const int abc_search_hint = 2131689491;
+			public const int abc_menu_sym_shortcut_label = 2131689491;
+			
+			// aapt resource value: 0x7F0F0014
+			public const int abc_prepend_shortcut_label = 2131689492;
+			
+			// aapt resource value: 0x7F0F0016
+			public const int abc_searchview_description_clear = 2131689494;
+			
+			// aapt resource value: 0x7F0F0017
+			public const int abc_searchview_description_query = 2131689495;
+			
+			// aapt resource value: 0x7F0F0018
+			public const int abc_searchview_description_search = 2131689496;
 			
 			// aapt resource value: 0x7F0F0019
-			public const int abc_shareactionprovider_share_with = 2131689497;
+			public const int abc_searchview_description_submit = 2131689497;
 			
 			// aapt resource value: 0x7F0F001A
-			public const int abc_shareactionprovider_share_with_application = 2131689498;
+			public const int abc_searchview_description_voice = 2131689498;
+			
+			// aapt resource value: 0x7F0F0015
+			public const int abc_search_hint = 2131689493;
 			
 			// aapt resource value: 0x7F0F001B
-			public const int abc_toolbar_collapse_description = 2131689499;
-			
-			// aapt resource value: 0x7F0F001D
-			public const int appbar_scrolling_view_behavior = 2131689501;
+			public const int abc_shareactionprovider_share_with = 2131689499;
 			
 			// aapt resource value: 0x7F0F001C
-			public const int app_name = 2131689500;
+			public const int abc_shareactionprovider_share_with_application = 2131689500;
+			
+			// aapt resource value: 0x7F0F001D
+			public const int abc_toolbar_collapse_description = 2131689501;
 			
 			// aapt resource value: 0x7F0F001F
-			public const int bottomsheet_action_expand_halfway = 2131689503;
-			
-			// aapt resource value: 0x7F0F001E
-			public const int bottom_sheet_behavior = 2131689502;
-			
-			// aapt resource value: 0x7F0F0020
-			public const int character_counter_content_description = 2131689504;
-			
-			// aapt resource value: 0x7F0F0021
-			public const int character_counter_overflowed_content_description = 2131689505;
-			
-			// aapt resource value: 0x7F0F0022
-			public const int character_counter_pattern = 2131689506;
-			
-			// aapt resource value: 0x7F0F0023
-			public const int chip_text = 2131689507;
-			
-			// aapt resource value: 0x7F0F0024
-			public const int clear_text_end_icon_content_description = 2131689508;
-			
-			// aapt resource value: 0x7F0F0025
-			public const int copy_toast_msg = 2131689509;
-			
-			// aapt resource value: 0x7F0F0026
-			public const int enter = 2131689510;
-			
-			// aapt resource value: 0x7F0F0027
-			public const int error_icon_content_description = 2131689511;
-			
-			// aapt resource value: 0x7F0F0028
-			public const int exposed_dropdown_menu_content_description = 2131689512;
-			
-			// aapt resource value: 0x7F0F0029
-			public const int fab_transformation_scrim_behavior = 2131689513;
-			
-			// aapt resource value: 0x7F0F002A
-			public const int fab_transformation_sheet_behavior = 2131689514;
-			
-			// aapt resource value: 0x7F0F002B
-			public const int fallback_menu_item_copy_link = 2131689515;
-			
-			// aapt resource value: 0x7F0F002C
-			public const int fallback_menu_item_open_in_browser = 2131689516;
-			
-			// aapt resource value: 0x7F0F002D
-			public const int fallback_menu_item_share_link = 2131689517;
-			
-			// aapt resource value: 0x7F0F002E
-			public const int hide_bottom_view_on_scroll_behavior = 2131689518;
+			public const int appbar_scrolling_view_behavior = 2131689503;
 			
 			// aapt resource value: 0x7F0F0000
-			public const int HOTAYI = 2131689472;
+			public const int ApplicationName = 2131689472;
+			
+			// aapt resource value: 0x7F0F001E
+			public const int app_name = 2131689502;
+			
+			// aapt resource value: 0x7F0F0021
+			public const int bottomsheet_action_expand_halfway = 2131689505;
+			
+			// aapt resource value: 0x7F0F0020
+			public const int bottom_sheet_behavior = 2131689504;
+			
+			// aapt resource value: 0x7F0F0022
+			public const int character_counter_content_description = 2131689506;
+			
+			// aapt resource value: 0x7F0F0023
+			public const int character_counter_overflowed_content_description = 2131689507;
+			
+			// aapt resource value: 0x7F0F0024
+			public const int character_counter_pattern = 2131689508;
+			
+			// aapt resource value: 0x7F0F0025
+			public const int chip_text = 2131689509;
+			
+			// aapt resource value: 0x7F0F0026
+			public const int clear_text_end_icon_content_description = 2131689510;
+			
+			// aapt resource value: 0x7F0F0027
+			public const int copy_toast_msg = 2131689511;
+			
+			// aapt resource value: 0x7F0F0028
+			public const int enter = 2131689512;
+			
+			// aapt resource value: 0x7F0F0029
+			public const int error_icon_content_description = 2131689513;
+			
+			// aapt resource value: 0x7F0F002A
+			public const int exposed_dropdown_menu_content_description = 2131689514;
+			
+			// aapt resource value: 0x7F0F002B
+			public const int fab_transformation_scrim_behavior = 2131689515;
+			
+			// aapt resource value: 0x7F0F002C
+			public const int fab_transformation_sheet_behavior = 2131689516;
+			
+			// aapt resource value: 0x7F0F002D
+			public const int fallback_menu_item_copy_link = 2131689517;
+			
+			// aapt resource value: 0x7F0F002E
+			public const int fallback_menu_item_open_in_browser = 2131689518;
 			
 			// aapt resource value: 0x7F0F002F
-			public const int icon_content_description = 2131689519;
+			public const int fallback_menu_item_share_link = 2131689519;
+			
+			// aapt resource value: 0x7F0F0002
+			public const int Hello = 2131689474;
 			
 			// aapt resource value: 0x7F0F0030
-			public const int item_view_role_description = 2131689520;
+			public const int hide_bottom_view_on_scroll_behavior = 2131689520;
+			
+			// aapt resource value: 0x7F0F0001
+			public const int HOTAYI = 2131689473;
 			
 			// aapt resource value: 0x7F0F0031
-			public const int lineNum = 2131689521;
+			public const int icon_content_description = 2131689521;
 			
 			// aapt resource value: 0x7F0F0032
-			public const int loc = 2131689522;
+			public const int item_view_role_description = 2131689522;
 			
 			// aapt resource value: 0x7F0F0033
-			public const int login = 2131689523;
+			public const int lineNum = 2131689523;
 			
 			// aapt resource value: 0x7F0F0034
-			public const int loginID = 2131689524;
+			public const int loc = 2131689524;
 			
 			// aapt resource value: 0x7F0F0035
-			public const int logout = 2131689525;
+			public const int login = 2131689525;
 			
 			// aapt resource value: 0x7F0F0036
-			public const int map = 2131689526;
+			public const int loginID = 2131689526;
 			
 			// aapt resource value: 0x7F0F0037
-			public const int material_clock_display_divider = 2131689527;
+			public const int logout = 2131689527;
 			
 			// aapt resource value: 0x7F0F0038
-			public const int material_clock_toggle_content_description = 2131689528;
+			public const int map = 2131689528;
 			
 			// aapt resource value: 0x7F0F0039
-			public const int material_hour_selection = 2131689529;
+			public const int material_clock_display_divider = 2131689529;
 			
 			// aapt resource value: 0x7F0F003A
-			public const int material_hour_suffix = 2131689530;
+			public const int material_clock_toggle_content_description = 2131689530;
 			
 			// aapt resource value: 0x7F0F003B
-			public const int material_minute_selection = 2131689531;
+			public const int material_hour_selection = 2131689531;
 			
 			// aapt resource value: 0x7F0F003C
-			public const int material_minute_suffix = 2131689532;
+			public const int material_hour_suffix = 2131689532;
 			
 			// aapt resource value: 0x7F0F003D
-			public const int material_slider_range_end = 2131689533;
+			public const int material_minute_selection = 2131689533;
 			
 			// aapt resource value: 0x7F0F003E
-			public const int material_slider_range_start = 2131689534;
+			public const int material_minute_suffix = 2131689534;
 			
 			// aapt resource value: 0x7F0F003F
-			public const int material_timepicker_am = 2131689535;
+			public const int material_slider_range_end = 2131689535;
 			
 			// aapt resource value: 0x7F0F0040
-			public const int material_timepicker_clock_mode_description = 2131689536;
+			public const int material_slider_range_start = 2131689536;
 			
 			// aapt resource value: 0x7F0F0041
-			public const int material_timepicker_hour = 2131689537;
+			public const int material_timepicker_am = 2131689537;
 			
 			// aapt resource value: 0x7F0F0042
-			public const int material_timepicker_minute = 2131689538;
+			public const int material_timepicker_clock_mode_description = 2131689538;
 			
 			// aapt resource value: 0x7F0F0043
-			public const int material_timepicker_pm = 2131689539;
+			public const int material_timepicker_hour = 2131689539;
 			
 			// aapt resource value: 0x7F0F0044
-			public const int material_timepicker_select_time = 2131689540;
+			public const int material_timepicker_minute = 2131689540;
 			
 			// aapt resource value: 0x7F0F0045
-			public const int material_timepicker_text_input_mode_description = 2131689541;
+			public const int material_timepicker_pm = 2131689541;
 			
 			// aapt resource value: 0x7F0F0046
-			public const int mtrl_badge_numberless_content_description = 2131689542;
+			public const int material_timepicker_select_time = 2131689542;
 			
 			// aapt resource value: 0x7F0F0047
-			public const int mtrl_chip_close_icon_content_description = 2131689543;
+			public const int material_timepicker_text_input_mode_description = 2131689543;
 			
 			// aapt resource value: 0x7F0F0048
-			public const int mtrl_exceed_max_badge_number_content_description = 2131689544;
+			public const int mtrl_badge_numberless_content_description = 2131689544;
 			
 			// aapt resource value: 0x7F0F0049
-			public const int mtrl_exceed_max_badge_number_suffix = 2131689545;
+			public const int mtrl_chip_close_icon_content_description = 2131689545;
 			
 			// aapt resource value: 0x7F0F004A
-			public const int mtrl_picker_a11y_next_month = 2131689546;
+			public const int mtrl_exceed_max_badge_number_content_description = 2131689546;
 			
 			// aapt resource value: 0x7F0F004B
-			public const int mtrl_picker_a11y_prev_month = 2131689547;
+			public const int mtrl_exceed_max_badge_number_suffix = 2131689547;
 			
 			// aapt resource value: 0x7F0F004C
-			public const int mtrl_picker_announce_current_selection = 2131689548;
+			public const int mtrl_picker_a11y_next_month = 2131689548;
 			
 			// aapt resource value: 0x7F0F004D
-			public const int mtrl_picker_cancel = 2131689549;
+			public const int mtrl_picker_a11y_prev_month = 2131689549;
 			
 			// aapt resource value: 0x7F0F004E
-			public const int mtrl_picker_confirm = 2131689550;
+			public const int mtrl_picker_announce_current_selection = 2131689550;
 			
 			// aapt resource value: 0x7F0F004F
-			public const int mtrl_picker_date_header_selected = 2131689551;
+			public const int mtrl_picker_cancel = 2131689551;
 			
 			// aapt resource value: 0x7F0F0050
-			public const int mtrl_picker_date_header_title = 2131689552;
+			public const int mtrl_picker_confirm = 2131689552;
 			
 			// aapt resource value: 0x7F0F0051
-			public const int mtrl_picker_date_header_unselected = 2131689553;
+			public const int mtrl_picker_date_header_selected = 2131689553;
 			
 			// aapt resource value: 0x7F0F0052
-			public const int mtrl_picker_day_of_week_column_header = 2131689554;
+			public const int mtrl_picker_date_header_title = 2131689554;
 			
 			// aapt resource value: 0x7F0F0053
-			public const int mtrl_picker_invalid_format = 2131689555;
+			public const int mtrl_picker_date_header_unselected = 2131689555;
 			
 			// aapt resource value: 0x7F0F0054
-			public const int mtrl_picker_invalid_format_example = 2131689556;
+			public const int mtrl_picker_day_of_week_column_header = 2131689556;
 			
 			// aapt resource value: 0x7F0F0055
-			public const int mtrl_picker_invalid_format_use = 2131689557;
+			public const int mtrl_picker_invalid_format = 2131689557;
 			
 			// aapt resource value: 0x7F0F0056
-			public const int mtrl_picker_invalid_range = 2131689558;
+			public const int mtrl_picker_invalid_format_example = 2131689558;
 			
 			// aapt resource value: 0x7F0F0057
-			public const int mtrl_picker_navigate_to_year_description = 2131689559;
+			public const int mtrl_picker_invalid_format_use = 2131689559;
 			
 			// aapt resource value: 0x7F0F0058
-			public const int mtrl_picker_out_of_range = 2131689560;
+			public const int mtrl_picker_invalid_range = 2131689560;
 			
 			// aapt resource value: 0x7F0F0059
-			public const int mtrl_picker_range_header_only_end_selected = 2131689561;
+			public const int mtrl_picker_navigate_to_year_description = 2131689561;
 			
 			// aapt resource value: 0x7F0F005A
-			public const int mtrl_picker_range_header_only_start_selected = 2131689562;
+			public const int mtrl_picker_out_of_range = 2131689562;
 			
 			// aapt resource value: 0x7F0F005B
-			public const int mtrl_picker_range_header_selected = 2131689563;
+			public const int mtrl_picker_range_header_only_end_selected = 2131689563;
 			
 			// aapt resource value: 0x7F0F005C
-			public const int mtrl_picker_range_header_title = 2131689564;
+			public const int mtrl_picker_range_header_only_start_selected = 2131689564;
 			
 			// aapt resource value: 0x7F0F005D
-			public const int mtrl_picker_range_header_unselected = 2131689565;
+			public const int mtrl_picker_range_header_selected = 2131689565;
 			
 			// aapt resource value: 0x7F0F005E
-			public const int mtrl_picker_save = 2131689566;
+			public const int mtrl_picker_range_header_title = 2131689566;
 			
 			// aapt resource value: 0x7F0F005F
-			public const int mtrl_picker_text_input_date_hint = 2131689567;
+			public const int mtrl_picker_range_header_unselected = 2131689567;
 			
 			// aapt resource value: 0x7F0F0060
-			public const int mtrl_picker_text_input_date_range_end_hint = 2131689568;
+			public const int mtrl_picker_save = 2131689568;
 			
 			// aapt resource value: 0x7F0F0061
-			public const int mtrl_picker_text_input_date_range_start_hint = 2131689569;
+			public const int mtrl_picker_text_input_date_hint = 2131689569;
 			
 			// aapt resource value: 0x7F0F0062
-			public const int mtrl_picker_text_input_day_abbr = 2131689570;
+			public const int mtrl_picker_text_input_date_range_end_hint = 2131689570;
 			
 			// aapt resource value: 0x7F0F0063
-			public const int mtrl_picker_text_input_month_abbr = 2131689571;
+			public const int mtrl_picker_text_input_date_range_start_hint = 2131689571;
 			
 			// aapt resource value: 0x7F0F0064
-			public const int mtrl_picker_text_input_year_abbr = 2131689572;
+			public const int mtrl_picker_text_input_day_abbr = 2131689572;
 			
 			// aapt resource value: 0x7F0F0065
-			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131689573;
+			public const int mtrl_picker_text_input_month_abbr = 2131689573;
 			
 			// aapt resource value: 0x7F0F0066
-			public const int mtrl_picker_toggle_to_day_selection = 2131689574;
+			public const int mtrl_picker_text_input_year_abbr = 2131689574;
 			
 			// aapt resource value: 0x7F0F0067
-			public const int mtrl_picker_toggle_to_text_input_mode = 2131689575;
+			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131689575;
 			
 			// aapt resource value: 0x7F0F0068
-			public const int mtrl_picker_toggle_to_year_selection = 2131689576;
+			public const int mtrl_picker_toggle_to_day_selection = 2131689576;
 			
 			// aapt resource value: 0x7F0F0069
-			public const int name = 2131689577;
+			public const int mtrl_picker_toggle_to_text_input_mode = 2131689577;
 			
 			// aapt resource value: 0x7F0F006A
-			public const int navigate = 2131689578;
+			public const int mtrl_picker_toggle_to_year_selection = 2131689578;
 			
 			// aapt resource value: 0x7F0F006B
-			public const int partN = 2131689579;
+			public const int name = 2131689579;
 			
 			// aapt resource value: 0x7F0F006C
-			public const int partN2 = 2131689580;
+			public const int navigate = 2131689580;
 			
 			// aapt resource value: 0x7F0F006D
-			public const int password = 2131689581;
+			public const int partN = 2131689581;
 			
 			// aapt resource value: 0x7F0F006E
-			public const int password_toggle_content_description = 2131689582;
+			public const int partN2 = 2131689582;
 			
 			// aapt resource value: 0x7F0F006F
-			public const int path_password_eye = 2131689583;
+			public const int password = 2131689583;
 			
 			// aapt resource value: 0x7F0F0070
-			public const int path_password_eye_mask_strike_through = 2131689584;
+			public const int password_toggle_content_description = 2131689584;
 			
 			// aapt resource value: 0x7F0F0071
-			public const int path_password_eye_mask_visible = 2131689585;
+			public const int path_password_eye = 2131689585;
 			
 			// aapt resource value: 0x7F0F0072
-			public const int path_password_strike_through = 2131689586;
+			public const int path_password_eye_mask_strike_through = 2131689586;
 			
 			// aapt resource value: 0x7F0F0073
-			public const int qty = 2131689587;
+			public const int path_password_eye_mask_visible = 2131689587;
 			
 			// aapt resource value: 0x7F0F0074
-			public const int qty2 = 2131689588;
+			public const int path_password_strike_through = 2131689588;
 			
 			// aapt resource value: 0x7F0F0075
-			public const int rackID = 2131689589;
+			public const int qty = 2131689589;
 			
 			// aapt resource value: 0x7F0F0076
-			public const int rackSize = 2131689590;
+			public const int qty2 = 2131689590;
 			
 			// aapt resource value: 0x7F0F0077
-			public const int rack_line = 2131689591;
+			public const int rackID = 2131689591;
 			
 			// aapt resource value: 0x7F0F0078
-			public const int report = 2131689592;
+			public const int rackSize = 2131689592;
 			
 			// aapt resource value: 0x7F0F0079
-			public const int request = 2131689593;
+			public const int rack_line = 2131689593;
 			
 			// aapt resource value: 0x7F0F007A
-			public const int scan = 2131689594;
+			public const int report = 2131689594;
 			
 			// aapt resource value: 0x7F0F007B
-			public const int search = 2131689595;
+			public const int request = 2131689595;
 			
 			// aapt resource value: 0x7F0F007C
-			public const int search_menu_title = 2131689596;
+			public const int scan = 2131689596;
 			
 			// aapt resource value: 0x7F0F007D
-			public const int serialNum = 2131689597;
+			public const int search = 2131689597;
 			
 			// aapt resource value: 0x7F0F007E
-			public const int serialNum2 = 2131689598;
+			public const int search_menu_title = 2131689598;
 			
 			// aapt resource value: 0x7F0F007F
-			public const int status_bar_notification_info_overflow = 2131689599;
+			public const int serialNum = 2131689599;
 			
 			// aapt resource value: 0x7F0F0080
-			public const int status_title = 2131689600;
+			public const int serialNum2 = 2131689600;
 			
 			// aapt resource value: 0x7F0F0081
-			public const int title_dashboard = 2131689601;
+			public const int status_bar_notification_info_overflow = 2131689601;
 			
 			// aapt resource value: 0x7F0F0082
-			public const int title_home = 2131689602;
+			public const int status_title = 2131689602;
 			
 			// aapt resource value: 0x7F0F0083
-			public const int title_issue = 2131689603;
+			public const int title_dashboard = 2131689603;
 			
 			// aapt resource value: 0x7F0F0084
-			public const int title_notifications = 2131689604;
+			public const int title_home = 2131689604;
 			
 			// aapt resource value: 0x7F0F0085
-			public const int title_receive = 2131689605;
+			public const int title_issue = 2131689605;
 			
 			// aapt resource value: 0x7F0F0086
-			public const int title_store = 2131689606;
+			public const int title_notifications = 2131689606;
+			
+			// aapt resource value: 0x7F0F0087
+			public const int title_receive = 2131689607;
+			
+			// aapt resource value: 0x7F0F0088
+			public const int title_store = 2131689608;
 			
 			static String()
 			{

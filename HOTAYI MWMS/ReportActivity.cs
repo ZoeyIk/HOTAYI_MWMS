@@ -11,6 +11,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Google.Android.Material.TextField;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace HOTAYI_MWMS
 {
@@ -30,7 +32,7 @@ namespace HOTAYI_MWMS
 
             ISharedPreferences pref2 = Application.Context.GetSharedPreferences("UserInfo", FileCreationMode.Private);
             string data = pref2.GetString("Reels", String.Empty);
-            reelInfo = JsonConvert.DeserializeObject<List<ReelInfo>>(data);
+            //reelInfo = JsonConvert.DeserializeObject<List<ReelInfo>>(data);
 
             // Create your application here
             SetContentView(Resource.Layout.activity_report);
@@ -43,7 +45,7 @@ namespace HOTAYI_MWMS
 
         }
 
-        public void OnClick(View v)
+        public async void OnClick(View v)
         {
             var partNum = textInput_partNum.Text;
 
@@ -54,18 +56,17 @@ namespace HOTAYI_MWMS
             else
             {
                 //bind data
-                
-                var reels = new List<ReelInfo>();
-
-                foreach(var reel in reelInfo)
+                HttpClient client = new HttpClient();
+                string url = $"https://hotayi-backend.azurewebsites.net/api/Reel/QueryPartNum?partN=" + partNum;
+                var uri = new Uri(url);
+                HttpResponseMessage responseMessage = await client.GetAsync(uri);
+                if (responseMessage.IsSuccessStatusCode)
                 {
-                    if(partNum == reel.partNum)
-                    {
-                        reels.Add(reel);
-                    }
+                    string content = await responseMessage.Content.ReadAsStringAsync();
+                    reelInfo = JsonConvert.DeserializeObject<List<ReelInfo>>(content);
                 }
 
-                if(reels.Count == 0)
+                if(reelInfo.Count == 0)
                 {
                     inputLayout.Error = "Please enter a valid part number";
                 }
@@ -76,7 +77,7 @@ namespace HOTAYI_MWMS
                     recyclerView.SetLayoutManager(manager);
 
                     //set adapter here
-                    adapter = new ReportAdapter(reels, partNum);
+                    adapter = new ReportAdapter(reelInfo, partNum);
                     recyclerView.SetAdapter(adapter);
                 }
                 
