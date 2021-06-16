@@ -8,19 +8,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-//using System.Data;
-using System.Data.SqlClient;
-using Newtonsoft.Json;
 
 namespace HOTAYI_MWMS
 {
-    class ZY_API
+    class PathInfo
     {
-        public void initializeDB()
-        {
-            
-            
-
-        }
+        public int row { get; set; }
+        public int col { get; set; }
+        public string desc { get; set; }
+        public string destR { get; set; }
     }
 }

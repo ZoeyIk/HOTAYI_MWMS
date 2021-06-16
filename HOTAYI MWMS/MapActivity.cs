@@ -22,10 +22,11 @@ namespace HOTAYI_MWMS
     [Activity(Label = "MapActivity")]
     public class MapActivity : AppCompatActivity
     {
-        private TableLayout tableLayout;
         private GridLayout gridLayout;
         private Button btn_request;
         private List<RackInfo> racks;
+        private List<PathInfo> pathInfo;
+        private int colN, rowN;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,69 +34,100 @@ namespace HOTAYI_MWMS
 
             // Create your application here
             SetContentView(Resource.Layout.activity_map);
+            SupportActionBar.Title = "Warehouse Map";
 
-            //tableLayout = FindViewById<TableLayout>(Resource.Id.tableLayout1);
             gridLayout = FindViewById<GridLayout>(Resource.Id.gridLayout1);
-            int colN = 10; int rowN = 15;
+            colN = 10; rowN = 15;
 
             // Get data from DB, then put into map
-            GetMapData(colN, rowN);
-            //addTableMapItem(colN, rowN);
-            //addGridMapItem(colN, rowN);
-
+            if (pathInfo == null)
+            {
+                GetMap(colN, rowN);
+            }
+            
             btn_request = FindViewById<Button>(Resource.Id.btn_request);
             btn_request.Click += delegate
             {
                 var intent = new Intent(this, typeof(RequestActivity));
-                this.StartActivity(intent);
+                this.StartActivityForResult(intent, 0);
             };
         }
 
-        // generate map using TableLayout
-        public void addTableMapItem(int colN, int rowN)
+        protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
         {
+            base.OnActivityResult(requestCode, resultCode, data);
+            // get racks from request page
+            if (resultCode == Result.Ok)
+            {
+                string resultR = data.GetStringExtra("DestRacks");
+                // get path data from db
+                //pathInfo = JsonConvert.DeserializeObject<List<PathInfo>>(way);
+                //Toast.MakeText(Application.Context, resultR, ToastLength.Short).Show();
+                GeneratePath(resultR);
+            }
+        }
+
+        // create map
+        public void createGridMap(int colN, int rowN)
+        {
+            // set the parameter of the grid layout
+            gridLayout.ColumnCount = colN;
+            gridLayout.RowCount = rowN;
+            gridLayout.AlignmentMode = GridAlign.Margins;
+
             for (int i = 1; i <= rowN; i++)
             {
-                //each row
-                TableRow row = new TableRow(this);
+                //each row (i)
                 for (int j = 1; j <= colN; j++)
                 {
-                    //each column
+                    //each column (j)
                     TextView title_rack = new TextView(this);
+                    ImageView img_path = new ImageView(this);
+                    bool path = true;
+                    if (i == 1 && j == 1)
+                    {
+                        img_path.SetImageResource(Resource.Drawable.Entrance);
+                        path = false;
+                    }
+
                     foreach (var rack in racks)
                     {
                         if (rack.rackRow == i && rack.rackCol == j)
                         {
                             title_rack.Text = rack.rackID;
-                            title_rack.Background = this.GetDrawable(Resource.Drawable.rectangle);
+                            title_rack.SetWidth(98);
+                            title_rack.Gravity = GravityFlags.Center;
                             if (rack.orientation == "V")
                             {
                                 title_rack.Rotation = 90;
-                                title_rack.SetPadding(10, 10, 10, 10);
                             }
-                            else
+                            if (rack.rackSize >= 600)
                             {
-                                title_rack.SetPadding(10, 10, 10, 10);
+                                title_rack.Background = this.GetDrawable(Resource.Drawable.rect_empty);
                             }
+                            else if (rack.rackSize >= 300)
+                            {
+                                title_rack.Background = this.GetDrawable(Resource.Drawable.rect_half);
+                            }
+                            else if (rack.rackSize == 0)
+                            {
+                                title_rack.Background = this.GetDrawable(Resource.Drawable.rect_full);
+                            }
+                            title_rack.TextAlignment = TextAlignment.Center;
                             title_rack.Click += delegate
                             {
                                 MapItem_Clicked(rack.rackID, rack.rackSize);
                             };
+                            //path = false;
                             break;
                         }
-                        else if (i == 1 && j == 1)
-                        {
-                            title_rack.SetBackgroundColor(Color.ParseColor("#FFA200"));
-                        }
-                        else
-                        {
-                            title_rack.Text = "";
-                            title_rack.SetPadding(10, 10, 10, 10);
-                        }
                     }
-                    row.AddView(title_rack);
+                    title_rack.SetPadding(10, 10, 10, 10);
+                    if (path)
+                        gridLayout.AddView(title_rack);
+                    else
+                        gridLayout.AddView(img_path);
                 }
-                tableLayout.AddView(row);
             }
         }
 
@@ -114,16 +146,9 @@ namespace HOTAYI_MWMS
                 {
                     //each column (j)
                     TextView title_rack = new TextView(this);
+                    ImageView img_path = new ImageView(this);
                     bool path = true;
-                    //set the entrance
-                    if (i == 1 && j == 1)
-                    {
-                        title_rack.Gravity = GravityFlags.Center;
-                        title_rack.TextAlignment = TextAlignment.Center;
-                        path = false;
-                        title_rack.SetWidth(80);
-                        title_rack.SetBackgroundColor(Color.ParseColor("#FFA200"));
-                    }
+                    
                     foreach (var rack in racks)
                     {
                         if (rack.rackRow == i && rack.rackCol == j)
@@ -135,12 +160,23 @@ namespace HOTAYI_MWMS
                             {
                                 title_rack.Rotation = 90;
                             }
-                            title_rack.Background = this.GetDrawable(Resource.Drawable.rectangle);
+                            if(rack.rackSize >= 600)
+                            {
+                                title_rack.Background = this.GetDrawable(Resource.Drawable.rect_empty);
+                            }
+                            else if(rack.rackSize >= 300)
+                            {
+                                title_rack.Background = this.GetDrawable(Resource.Drawable.rect_half);
+                            }
+                            else if(rack.rackSize == 0)
+                            {
+                                title_rack.Background = this.GetDrawable(Resource.Drawable.rect_full);
+                            }
                             title_rack.TextAlignment = TextAlignment.Center;
+                            title_rack.SetPadding(10, 10, 10, 10);
                             title_rack.Click += delegate
                             {
                                 MapItem_Clicked(rack.rackID, rack.rackSize);
-                                title_rack.TextAlignment = TextAlignment.TextEnd;
                             };
                             path = false;
                             break;
@@ -148,11 +184,87 @@ namespace HOTAYI_MWMS
                     }
                     if (path)
                     {
-                        title_rack.SetWidth(45);
-                        title_rack.SetHeight(45);
+                        bool isPath = true;
+                        //set the entrance
+                        if (i == 1 && j == 1)
+                        {
+                            img_path.SetImageResource(Resource.Drawable.Entrance);
+                            isPath = false;
+                        }
+                        if(pathInfo != null || pathInfo.Count > 0)
+                        {
+                            foreach (var item in pathInfo)
+                            {
+                                if (i == item.row && j == item.col)
+                                {
+                                    switch (item.desc)
+                                    {
+                                        case "NtE":
+                                            if (item.destR == "L")
+                                                img_path.SetImageResource(Resource.Drawable.NtE_destL);
+                                            else if (item.destR == "B")
+                                                img_path.SetImageResource(Resource.Drawable.NtE_destB);
+                                            else
+                                                img_path.SetImageResource(Resource.Drawable.NtE);
+                                            break;
+                                        case "NtW":
+                                            if (item.destR == "R")
+                                                img_path.SetImageResource(Resource.Drawable.NtW_destR);
+                                            else if (item.destR == "B")
+                                                img_path.SetImageResource(Resource.Drawable.NtW_destB);
+                                            else
+                                                img_path.SetImageResource(Resource.Drawable.NtW);
+                                            break;
+                                        case "EtS":
+                                            if (item.destR == "L")
+                                                img_path.SetImageResource(Resource.Drawable.EtS_destTL);
+                                            else if (item.destR == "T")
+                                                img_path.SetImageResource(Resource.Drawable.EtS_destT);
+                                            else
+                                                img_path.SetImageResource(Resource.Drawable.EtS);
+                                            break;
+                                        case "StW":
+                                            if (item.destR == "R")
+                                                img_path.SetImageResource(Resource.Drawable.StW_destR);
+                                            else if (item.destR == "T")
+                                                img_path.SetImageResource(Resource.Drawable.StW_destT);
+                                            else
+                                                img_path.SetImageResource(Resource.Drawable.StW);
+                                            break;
+                                        case "straightH":
+                                            if (item.destR == "T")
+                                                img_path.SetImageResource(Resource.Drawable.strH_destT);
+                                            else if (item.destR == "B")
+                                                img_path.SetImageResource(Resource.Drawable.strH_destB);
+                                            else
+                                                img_path.SetImageResource(Resource.Drawable.strH);
+                                            break;
+                                        case "straightV":
+                                            if (item.destR == "L")
+                                                img_path.SetImageResource(Resource.Drawable.strV_destL);
+                                            else if (item.destR == "R")
+                                                img_path.SetImageResource(Resource.Drawable.strV_destR);
+                                            else
+                                                img_path.SetImageResource(Resource.Drawable.strV);
+                                            break;
+                                    }
+                                    isPath = false;
+                                }
+                            }
+                        }
+                        if (isPath)
+                        {
+                            title_rack.SetPadding(10, 10, 10, 10);
+                            gridLayout.AddView(title_rack);
+                        }
+                        else
+                            gridLayout.AddView(img_path);
                     }
-                    title_rack.SetPadding(10, 10, 10, 10);
-                    gridLayout.AddView(title_rack);
+                    else
+                    {
+                        img_path = null;
+                        gridLayout.AddView(title_rack);
+                    }
                 }
             }
         }
@@ -170,7 +282,7 @@ namespace HOTAYI_MWMS
             mapItem.Show(fragmentT, "DialogFragment");
         }
 
-        public async void GetMapData(int col, int row)
+        public async void GetMap(int col, int row)
         {
             HttpClient client = new HttpClient();
             string url = $"https://hotayi-backend.azurewebsites.net/api/Reel/GetRackInfo";
@@ -180,8 +292,36 @@ namespace HOTAYI_MWMS
             {
                 string content = await responseMessage.Content.ReadAsStringAsync();
                 racks = JsonConvert.DeserializeObject<List<RackInfo>>(content);
-                addGridMapItem(col, row);
+                if(pathInfo == null)
+                {
+                    createGridMap(col, row);
+                }
+                else
+                {
+                    gridLayout.RemoveAllViews();
+                    addGridMapItem(col, row);
+                }
             }
+        }
+
+        public async void GeneratePath(string param)
+        {
+            // fetch the path data from API
+            HttpClient client = new HttpClient();
+            string url = $"https://hotayi-backend.azurewebsites.net/api/Reel/RequestPath?destRs=" + param;
+            var uri = new Uri(url);
+            HttpResponseMessage responseMessage = await client.GetAsync(uri);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                string content = await responseMessage.Content.ReadAsStringAsync();
+                pathInfo = JsonConvert.DeserializeObject<List<PathInfo>>(content);
+                GetMap(colN, rowN);
+            }
+        }
+
+        public void NavBtnClicked(string rackId)
+        {
+            GeneratePath(rackId);
         }
     }
 }

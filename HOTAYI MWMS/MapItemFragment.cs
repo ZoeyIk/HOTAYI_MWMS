@@ -46,8 +46,9 @@ namespace HOTAYI_MWMS
             btn_nav = view.FindViewById<Button>(Resource.Id.btn_nav);
             btn_nav.Click += delegate
             {
+                var parentAct = this.Activity as MapActivity;
+                parentAct.NavBtnClicked(rackId);
                 Dismiss();
-                //do something 
             };
 
             return view;
