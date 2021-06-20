@@ -91,7 +91,7 @@ namespace HOTAYI_MWMS
                         }
                         else
                         {
-                            Toast.MakeText(Application.Context, "The quantity has exceeded the storing amount", ToastLength.Short).Show();
+                            Toast.MakeText(Application.Context, "Part number or Quantity is invalid", ToastLength.Short).Show();
                             return;
                         }
                     }
@@ -116,7 +116,7 @@ namespace HOTAYI_MWMS
                     }
                     else
                     {
-                        Toast.MakeText(Application.Context, "The quantity has exceeded the storing amount", ToastLength.Short).Show();
+                        Toast.MakeText(Application.Context, "Part number or Quantity is invalid", ToastLength.Short).Show();
                         return;
                     }
                 }

@@ -90,7 +90,7 @@ namespace HOTAYI_MWMS
                 }
 
                 bool result = int.TryParse(qty, out int inp_qty);
-                if (!result)
+                if (!result || inp_qty <= 0)
                 {
                     inputLayout2.Error = "Please enter or scan a number for quantity";
                     valid = false;

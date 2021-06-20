@@ -51,7 +51,7 @@ namespace HOTAYI_MWMS
                     inputLayout1.Error = "Please enter a valid part number";
                     valid = false;
                 }
-                if(input_quantity == null || input_quantity == "")
+                if(input_quantity == null || input_quantity == "" || int.Parse(input_quantity) <= 0)
                 {
                     inputLayout2.Error = "Please enter a quantity";
                     valid = false;

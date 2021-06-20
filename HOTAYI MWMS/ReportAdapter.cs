@@ -47,6 +47,10 @@ namespace HOTAYI_MWMS
             }
             var quantity = reel[position].qty.ToString();
             var loc = reel[position].location;
+            if(rack_line == "-")
+            {
+                loc = "-";
+            }
 
             // Replace the contents of the view with that element
             var holder = viewHolder as ReportAdapterViewHolder;

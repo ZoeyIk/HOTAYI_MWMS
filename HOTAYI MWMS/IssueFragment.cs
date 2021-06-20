@@ -76,9 +76,15 @@ namespace HOTAYI_MWMS
                     inputLayout2.Error = "Please enter or scan a production line";
                     valid = false;
                 }
+                bool result = int.TryParse(lineN, out int prodL);
+                if (!result || prodL <= 0)
+                {
+                    inputLayout2.Error = "Please enter or scan a production line";
+                    valid = false;
+                }
                 if (valid)
                 {
-                    saveData(serialN, lineN);
+                    saveData(serialN, prodL);
                     c = 0;                    
                 }  
             };
@@ -107,7 +113,7 @@ namespace HOTAYI_MWMS
             inputLayout2.Error = null;
         }
 
-        public async void saveData(string serialN, string prodLine)
+        public async void saveData(string serialN, int prodLine)
         {
             HttpClient client = new HttpClient();
             string url = $"https://hotayi-backend.azurewebsites.net/api/Reel/InsertItems?iQuery=2&serialN=" + serialN + $"&rackOrProd=" + prodLine + $"&empID=" + emp[0].empID;
