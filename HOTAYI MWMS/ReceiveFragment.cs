@@ -140,6 +140,10 @@ namespace HOTAYI_MWMS
                 {
                     clearInput();
                 }
+                else
+                {
+                    inputLayout2.Error = "Quantity has exceeded the limit for one material";
+                }
                 Toast.MakeText(Application.Context, content, ToastLength.Short).Show();
             }
         }

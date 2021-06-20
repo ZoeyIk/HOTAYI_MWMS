@@ -126,6 +126,11 @@ namespace HOTAYI_MWMS
                 {
                     clearInput();
                 }
+                else
+                {
+                    inputLayout1.Error = "Please enter or scan a valid serial number";
+                    inputLayout2.Error = "Please enter or scan a valid line number";
+                }
                     
                 Toast.MakeText(Application.Context, content, ToastLength.Short).Show();
             }
