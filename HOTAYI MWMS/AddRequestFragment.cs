@@ -69,5 +69,10 @@ namespace HOTAYI_MWMS
 
             return view;
         }
+
+        public void setInput(string data)
+        {
+            input_part.Text = data;
+        }
     }
 }
