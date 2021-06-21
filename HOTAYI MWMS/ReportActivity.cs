@@ -13,6 +13,8 @@ using System.Text;
 using Google.Android.Material.TextField;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using Symbol.XamarinEMDK;
+using Symbol.XamarinEMDK.Barcode;
 
 namespace HOTAYI_MWMS
 {

@@ -160,11 +160,11 @@ namespace HOTAYI_MWMS
                             {
                                 title_rack.Rotation = 90;
                             }
-                            if(rack.rackSize >= 600)
+                            if(rack.rackSize >= 500)
                             {
                                 title_rack.Background = this.GetDrawable(Resource.Drawable.rect_empty);
                             }
-                            else if(rack.rackSize >= 300)
+                            else if(rack.rackSize > 0)
                             {
                                 title_rack.Background = this.GetDrawable(Resource.Drawable.rect_half);
                             }

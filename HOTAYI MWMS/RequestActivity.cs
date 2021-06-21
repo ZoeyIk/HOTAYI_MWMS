@@ -17,6 +17,8 @@ using AndroidX.AppCompat.App;
 using FragmentTransaction = AndroidX.Fragment.App.FragmentTransaction;
 using System.Net.Http;
 using Newtonsoft.Json;
+using Symbol.XamarinEMDK;
+using Symbol.XamarinEMDK.Barcode;
 
 namespace HOTAYI_MWMS
 {
