@@ -138,7 +138,7 @@ namespace HOTAYI_MWMS
 
             if (adapter == null)
             {
-                adapter = new RequestAdapter(requests);
+                adapter = new RequestAdapter(requests, this);
                 recyclerView.SetAdapter(adapter);
             }
             else
