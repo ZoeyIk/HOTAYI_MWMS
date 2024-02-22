@@ -7,3 +7,5 @@ The functions of this application:
 2.  Able to show report on search, the input can accept scanned result
 3.  Able to show warehouse map (grid map) based on data feteched from database
 4.  Able to show the shortest path to target rack (can be done either user press the rack to navigate or user makes production requests)
+
+The backend codes of this project is in this repository: https://github.com/ZoeyIk/HMWS_Backend.git
